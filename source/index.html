@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo" src="http://placehold.it/191x39" width="191" height="39" alt="Кэт энерджи">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191" height="39" alt="Кэт энерджи">
+      </a>
       <nav class="page-navigation">
         <button class="page-navigation__toggle" type="button">Открыть меню</button>
         <ul class="page-navigation__page-menu page-menu">
@@ -21,98 +23,100 @@
           </li>
         </ul>
       </nav>
-      <main class="page-main">
-        <section class="promo">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__subtitle">Занялся собой? Займись котом!</p>
-          <img class="" src="http://placehold.it/320x305" width="320" height="305" alt="Кэт энерджи">
-          <a class="button" href="program-form.html">Подобрать программу</a>
-        </section>
-        <section class="features">
-          <h2 class="visually-hidden">Возможности</h2>
-          <ul class="features__list">
-            <li class="features__item">
-              <div class="feature__icon-wrapper">
-                <img class="feature__icon feature__icon--slim" src="http://placehold.it/35x49" width="35" height="49" alt="Похудение"/>
-              </div>
-              <h3 class="feature__title">Похудение</h3>
-              <p class="feature__description">
-                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-              </p>
-              <a class="feature__link" href="catalog.html">Каталог Slim</a>
-            </li>
-            <li class="features__item">
-              <div class="feature__icon-wrapper">
-                <img class="feature__icon feature__icon--fat" src="http://placehold.it/35x49" width="35" height="49" alt="Набор массы" />
-              </div>
-              <h3 class="feature__title">Набор массы</h3>
-              <p class="feature__description">
-                Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-              </p>
-              <a class="feature__link" href="catalog.html">Каталог Pro</a>
-            </li>
-          </ul>
-        </section>
-        <section class="how-it-works">
-          <h2 class="hot-it-works__title">Как это работает</h2>
-          <ul class="how-it-works__list">
-            <li class="how-it-work__item">
-              <div class="how-it-works__icon-wrapper">
-                <img class="how-it-works__icon hot-it-works__icon--leaf" src="http://placehold.it/26x29" width="26" height="29" alt="Только полезные питательные вещества"/>
-              </div>
-              <p class="how-it-works__description">
-                Функциональное питание содержит только полезные питательные вещества.
-              </p>
-            </li>
-            <li class="how-it-work__item">
-              <div class="how-it-works__icon-wrapper">
-                <img class="how-it-works__icon hot-it-works__icon--instant" src="http://placehold.it/26x29" width="26" height="29" alt="Выпускается в виде порошка"/>
-              </div>
-              <p class="how-it-works__description">
-                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-              </p>
-            </li>
-            <li class="how-it-work__item">
-              <div class="how-it-works__icon-wrapper">
-                <img class="how-it-works__icon hot-it-works__icon--water" src="http://placehold.it/26x29" width="26" height="29" alt="Замените один-два приема обычной еды"/>
-              </div>
-              <p class="how-it-works__food">
-                Замените один-два приема обычной еды на наше функциональное питание.
-              </p>
-            </li>
-            <li class="how-it-work__item">
-              <div class="how-it-works__icon-wrapper">
-                <img class="how-it-works__icon hot-it-works__icon--weight" src="http://placehold.it/26x29" width="26" height="29" alt="Уже через месяц наслаждайтесь изменениями"/>
-              </div>
-              <p class="how-it-works__description">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-              </p>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer class="page-footer">
-        <img class="page-footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Кэт энерджи">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </footer>
     </header>
+    <main class="page-main">
+      <section class="page-main__promo promo">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__subtitle">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="http://placehold.it/320x305" width="320" height="305" alt="Кэт энерджи">
+        <a class="button" href="program-form.html">Подобрать программу</a>
+      </section>
+      <section class="page-main__features features">
+        <h2 class="visually-hidden">Возможности</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__icon-wrapper">
+              <img class="features__icon features__icon--slim" src="http://placehold.it/35x49" width="35" height="49" alt="Похудение"/>
+            </div>
+            <h3 class="features__title">Похудение</h3>
+            <p class="features__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="features__link" href="catalog.html">Каталог Slim</a>
+          </li>
+          <li class="features__item">
+            <div class="features__icon-wrapper">
+              <img class="features__icon features__icon--fat" src="http://placehold.it/35x49" width="35" height="49" alt="Набор массы" />
+            </div>
+            <h3 class="features__title">Набор массы</h3>
+            <p class="features__description">
+              Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="features__link" href="catalog.html">Каталог Pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__how-it-works how-it-works">
+        <h2 class="how-it-works__title">Как это работает</h2>
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item">
+            <div class="how-it-works__icon-wrapper">
+              <img class="how-it-works__icon how-it-works__icon--leaf" src="http://placehold.it/26x29" width="26" height="29" alt="Только полезные питательные вещества"/>
+            </div>
+            <p class="how-it-works__description">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="how-it-works__item">
+            <div class="how-it-works__icon-wrapper">
+              <img class="how-it-works__icon how-it-works__icon--instant" src="http://placehold.it/26x29" width="26" height="29" alt="Выпускается в виде порошка"/>
+            </div>
+            <p class="how-it-works__description">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="how-it-works__item">
+            <div class="how-it-works__icon-wrapper">
+              <img class="how-it-works__icon how-it-works__icon--water" src="http://placehold.it/26x29" width="26" height="29" alt="Замените один-два приема обычной еды"/>
+            </div>
+            <p class="how-it-works__food">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="how-it-works__item">
+            <div class="how-it-works__icon-wrapper">
+              <img class="how-it-works__icon how-it-works__icon--weight" src="http://placehold.it/26x29" width="26" height="29" alt="Уже через месяц наслаждайтесь изменениями"/>
+            </div>
+            <p class="how-it-works__description">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img class="page-footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Кэт энерджи">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__copyright-image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
