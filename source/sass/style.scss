@@ -1,6 +1,9 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
+@import "mixins";
+
+@import "global";
 @import "blocks/page-menu";
 @import "blocks/page-main";
 @import "blocks/page-catalog";
@@ -12,4 +15,3 @@
 @import "blocks/more-products";
 @import "blocks/social";
 @import "blocks/button";
-@import "global";
