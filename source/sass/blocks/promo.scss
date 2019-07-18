@@ -1,8 +1,31 @@
+$padding: 20px;
+
 .promo {
+  padding: $padding;
+
   color: #ffffff;
   background-color: #68b738;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.54;
+.promo__title {
+  font-size: 36px;
+  line-height: 1;
+
+  text-align: center;
+}
+
+.promo__subtitle {
+  font-size: 14px;
+  line-height: 1;
+
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.promo__image {
+  margin-left: -$padding;
 }
