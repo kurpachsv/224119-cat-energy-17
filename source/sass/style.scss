@@ -1,8 +1,6 @@
 @import "normalize";
 @import "fonts";
-
-$color: #111111;
-$color-bg: #ffffff;
+@import "variables";
 
 body {
     margin: 0;
