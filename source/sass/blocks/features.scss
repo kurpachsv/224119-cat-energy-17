@@ -34,11 +34,11 @@
   }
 
   &--slim::before {
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("/img/icon-cat-slim.svg");
   }
 
   &--fat::before {
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("/img/icon-cat-pro.svg");
   }
 }
 
@@ -86,7 +86,7 @@
     width: 25px;
     height: 12px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("/img/icon-right-arrow-long.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
