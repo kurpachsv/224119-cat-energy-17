@@ -18,15 +18,15 @@
     width: 17px;
     height: 17px;
 
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 
     background-color: #f2f2f2;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
-  &--vk::before{
+  &--vk::before {
     background-image: url("../../img/icon-vk.svg");
   }
 
