@@ -1,11 +1,8 @@
 .promo {
-  padding: 20px;
+  position: relative;
 
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .promo__title {
@@ -19,6 +16,9 @@
 }
 
 .promo__subtitle {
+  margin: 0;
+  padding: 20px;
+
   font-size: 14px;
   line-height: 1;
 
@@ -28,5 +28,27 @@
 }
 
 .promo__image {
-  margin-left: -20px;
+  position: absolute;
+
+  left: 0;
+  bottom: 50px;
+
+  display: block;
+
+  height: 305px;
+  width: 320px;
+}
+
+.promo__title-wrapper {
+  min-height: 305px;
+  padding-top: 10px;
+
+  background-color: #68b738;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promo__image-wrapper {
+  min-height: 150px;
 }
