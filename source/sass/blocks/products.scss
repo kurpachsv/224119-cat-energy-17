@@ -1,7 +1,43 @@
 .products {
+  color: #111111;
   background-color: #ededed;
 }
 
 .products__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.products__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.products__subtitle {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;;
+  line-height: 1.25;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.products__link {
+  color: #111111;
+
+  text-decoration: none;
+}
+
+.products__params {
+  font-family: $sec-font;
+  font-size: 12px;
+  line-height: 1.33;
+
+  color: #444444;
 }
