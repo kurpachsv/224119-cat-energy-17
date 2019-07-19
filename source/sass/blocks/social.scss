@@ -5,8 +5,12 @@
   list-style: none;
 }
 
-.social__link {
+.social__item {
   position: relative;
+  display: inline-block;
+
+  width: 17px;
+  height: 17px;
 
   &::before {
     @include pseudo;
