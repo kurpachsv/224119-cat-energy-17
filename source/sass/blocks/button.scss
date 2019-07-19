@@ -23,4 +23,14 @@
   &--down {
     color: rgba($color-btn, 0.3);
   }
+
+  &--show-all {
+    line-height: 1.25;
+
+    padding-top: 13px;
+    padding-bottom: 12px;
+
+    color: #444444;
+    background-color: #f2f2f2;
+  }
 }
