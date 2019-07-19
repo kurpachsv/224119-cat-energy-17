@@ -1,6 +1,24 @@
 .button {
+  font: inherit;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+
+  font-size: 20px;
+  line-height: 1;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
   color: $color-btn;
   background-color: $color-bg-btn;
+  border: none;
 
-  text-transform: uppercase;
+  &--down {
+    color: rgba($color-btn, 0.3)
+  }
 }
