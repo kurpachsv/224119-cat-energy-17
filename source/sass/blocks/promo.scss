@@ -1,7 +1,5 @@
-$padding: 20px;
-
 .promo {
-  padding: $padding;
+  padding: 20px;
 
   color: #ffffff;
   background-color: #68b738;
@@ -27,5 +25,5 @@ $padding: 20px;
 }
 
 .promo__image {
-  margin-left: -$padding;
+  margin-left: -20px;
 }
