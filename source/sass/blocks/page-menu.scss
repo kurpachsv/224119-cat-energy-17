@@ -1,0 +1,37 @@
+.page-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-menu__item {
+  position: relative;
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  text-align: center;
+}
+
+.page-menu__link {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text;
+
+  &--active {
+    border-bottom: 2px solid #68b738;
+  }
+
+  &:hover:not(&--active) {
+    color: rgba($color-text, 0.6);
+  }
+
+  &--down {
+    color: rgba($color-text, 0.3);
+  }
+}

@@ -1,0 +1,40 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+
+  width: 17px;
+  height: 17px;
+
+  &::before {
+    @include pseudo;
+
+    width: 17px;
+    height: 17px;
+
+    left: 0;
+    top: 0;
+
+    background-color: #f2f2f2;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &--vk::before {
+    background-image: url("/img/icon-vk.svg");
+  }
+
+  &--inst::before {
+    background-image: url("/img/icon-insta.svg");
+  }
+
+  &--fb::before {
+    background-image: url("/img/icon-fb.svg");
+  }
+}

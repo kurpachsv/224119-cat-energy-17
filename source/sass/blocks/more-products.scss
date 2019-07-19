@@ -1,0 +1,22 @@
+.more-products {
+  color: #111111;
+  background-color: #ededed;
+}
+
+.more-products__title {
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-products__subtitle {
+  font-family: $sec-font;
+  font-size: 12px;
+  line-height: 1.33;
+
+  text-align: center;
+
+  color: #444444;
+}
