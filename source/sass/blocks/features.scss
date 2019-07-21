@@ -49,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 370px;
+    min-height: 265px;
 
     padding: 30px;
 
@@ -71,24 +72,23 @@
       background-repeat: no-repeat;
       border-radius: 50%;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 400px;
-      min-height: 265px;
+  @media (min-width: $desktop-width) {
+    width: 400px;
 
-      &::before {
-        display: block;
+    &::before {
+      display: block;
 
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
 
-        top: 60px;
-        left: 60px;
-      }
+      top: 60px;
+      left: 60px;
+    }
 
-      &::after {
-        display: none;
-      }
+    &::after {
+      display: none;
     }
   }
 
