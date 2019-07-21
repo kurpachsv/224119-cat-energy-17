@@ -20,13 +20,6 @@ body {
   font-weight: 400;
   color: $color-text;
   background-color: $color-bg-text;
-
-  @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, #68b738 50%, #68b738 100%);
-    background-position: right top;
-    background-size: 50%;
-    background-repeat: no-repeat;
-  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -42,4 +35,19 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: $desktop-width;
+  }
 }
