@@ -20,6 +20,8 @@
   background-color: $color-bg-btn;
   border: none;
 
+  cursor: pointer;
+
   &--down {
     color: rgba($color-btn, 0.3);
   }
