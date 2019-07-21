@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-direction: column;
+
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-menu__item {
@@ -13,6 +20,14 @@
   padding-bottom: 24px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-menu__link {
@@ -33,5 +48,25 @@
 
   &--down {
     color: rgba($color-text, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+
+    &:hover:not(&--active) {
+      color: rgba(#ffffff, 0.6);
+    }
+
+    &--down {
+      color: rgba(#ffffff, 0.3);
+    }
   }
 }

@@ -1,5 +1,15 @@
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
-  width: 320px;
+  min-width: $mobile-width;
 
   margin: 0;
   padding: 0;
@@ -10,6 +20,13 @@ body {
   font-weight: 400;
   color: $color-text;
   background-color: $color-bg-text;
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #68b738 50%, #68b738 100%);
+    background-position: right top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

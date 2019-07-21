@@ -3,6 +3,8 @@
 @import "variables";
 @import "mixins";
 @import "global";
+@import "blocks/page-header";
+@import "blocks/page-navigation";
 @import "blocks/page-menu";
 @import "blocks/page-main";
 @import "blocks/page-catalog";
@@ -16,4 +18,3 @@
 @import "blocks/button";
 @import "blocks/program-button";
 @import "blocks/order-button";
-@import "blocks/show-all-button";

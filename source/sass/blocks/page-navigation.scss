@@ -1,1 +1,5 @@
-/* stylelint-disable */
+.page-navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
