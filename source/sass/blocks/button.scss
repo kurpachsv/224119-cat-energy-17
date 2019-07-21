@@ -35,4 +35,8 @@
     color: #444444;
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }

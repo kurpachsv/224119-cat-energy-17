@@ -3,3 +3,8 @@
   display: $display;
   position: $position;
 }
+
+@mixin last-row($margin-left: 60px) {
+  content: "";
+  flex: auto;
+}
