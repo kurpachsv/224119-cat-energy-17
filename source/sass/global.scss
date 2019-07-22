@@ -36,18 +36,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: $desktop-width;
-  }
-}
