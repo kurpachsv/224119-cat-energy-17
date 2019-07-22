@@ -33,9 +33,10 @@
 .page-menu__link {
   font-size: 20px;
   line-height: 1.25;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+
   color: $color-text;
 
   &--active {
@@ -49,24 +50,26 @@
   &--down {
     color: rgba($color-text, 0.3);
   }
+}
 
-  @media (min-width: $tablet-width) {
-    font-weight: 400;
+.page-menu__bg-link {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+
+  &--active {
+    border-bottom: 2px solid #ffffff;
   }
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+  &:hover:not(&--active) {
+    color: rgba(#ffffff, 0.6);
+  }
 
-    &--active {
-      border-bottom: 2px solid #ffffff;
-    }
-
-    &:hover:not(&--active) {
-      color: rgba(#ffffff, 0.6);
-    }
-
-    &--down {
-      color: rgba(#ffffff, 0.3);
-    }
+  &--down {
+    color: rgba(#ffffff, 0.3);
   }
 }
