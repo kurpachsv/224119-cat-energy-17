@@ -1,4 +1,4 @@
-.promo {
+.pick-program {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
   }
 }
 
-.promo__title {
+.pick-program__title {
   margin: 0;
   padding: 0;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.promo__subtitle {
+.pick-program__slogan {
   margin: 0;
   padding: 20px;
 
@@ -56,7 +56,7 @@
   }
 }
 
-.promo__image {
+.pick-program__image {
   position: absolute;
 
   left: 50%;
@@ -81,7 +81,7 @@
   }
 }
 
-.promo__title-wrapper {
+.pick-program__title-wrapper {
   min-height: 305px;
   width: 100%;
 
@@ -101,7 +101,7 @@
   }
 }
 
-.promo__image-wrapper {
+.pick-program__image-wrapper {
   min-height: 150px;
 
   order: 1;
@@ -113,7 +113,7 @@
   }
 }
 
-.promo__button {
+.pick-program__button {
   order: 2;
 
   @media (min-width: $tablet-width) {

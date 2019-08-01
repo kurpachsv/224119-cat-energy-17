@@ -7,7 +7,7 @@
   background-color: #ffffff;
 }
 
-.more-products__title {
+.more-products__text {
   margin-top: 100px;
 
   font-size: 16px;
@@ -29,8 +29,10 @@
   }
 }
 
-.more-products__subtitle {
+.more-products__slogan {
+  margin: 0;
   margin-top: 10px;
+  padding: 0;
 
   font-family: $sec-font;
   font-size: 12px;
