@@ -1,7 +1,15 @@
 .page-main {
   min-height: 2684px;
+  margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 4070px;
+
+    margin-top: 20px;
+    margin-left: 0;
+  }
 }
 
 .page-main__features {
-  margin-top: 23px;
+  margin-top: -2px;
 }
