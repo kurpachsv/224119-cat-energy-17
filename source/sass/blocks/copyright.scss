@@ -1,1 +1,29 @@
-/* stylelint-disable */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 78px;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-top: -2px;
+  margin-left: -2px;
+  padding: 0;
+
+  font-family: $sec-font;
+  font-size: 16px;
+  line-height: 1;
+
+  color: #444444;
+}
+
+.copyright__logo {
+  margin-top: 5px;
+}
+
+.copyright__logo-image {
+  width: 27px;
+  height: 34px;
+}

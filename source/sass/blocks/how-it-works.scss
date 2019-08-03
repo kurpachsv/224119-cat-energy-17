@@ -1,6 +1,4 @@
 .how-it-works {
-  padding: 20px;
-
   color: #444444;
   background-color: #ffffff;
 }
@@ -11,6 +9,7 @@
   flex-wrap: wrap;
 
   margin: 0;
+  margin-top: 4px;
   padding: 0;
 
   list-style: none;
@@ -28,7 +27,7 @@
 
 .how-it-works__item {
   position: relative;
-  margin-top: 30px;
+  margin-top: 25px;
 
   &::before {
     @include pseudo;
@@ -88,7 +87,10 @@
 }
 
 .how-it-works__description {
-  margin-left: 70px;
+  margin: 0;
+  margin-left: 80px;
+  margin-top: 1px;
+  padding: 0;
 
   font-family: $sec-font;
   font-size: 14px;

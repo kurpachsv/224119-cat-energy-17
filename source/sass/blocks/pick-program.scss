@@ -5,10 +5,12 @@
   flex-direction: column;
   align-items: center;
 
-  margin: -20px;
+  min-height: 305px;
 
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #68b738;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 800px;
@@ -19,6 +21,10 @@
     color: #111111;
     background-color: transparent;
   }
+}
+
+.pick-program__wrapper {
+  margin-top: 28px;
 }
 
 .pick-program__title {
@@ -40,7 +46,7 @@
 
 .pick-program__slogan {
   margin: 0;
-  padding: 20px;
+  margin-top: 25px;
 
   font-size: 14px;
   line-height: 1;
@@ -62,12 +68,12 @@
   position: absolute;
 
   left: 50%;
-  bottom: 50px;
+  bottom: -26px;
 
   display: block;
 
-  height: 305px;
-  width: 320px;
+  width: 280px;
+  height: 270px;
 
   transform: translateX(-50%);
 
@@ -83,43 +89,21 @@
   }
 }
 
-.pick-program__title-wrapper {
-  min-height: 305px;
-  width: 100%;
-
-  background-color: #68b738;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-    background-image: none;
-
-    min-height: 200px;
-    width: 420px;
-  }
-}
-
 .pick-program__image-wrapper {
-  min-height: 150px;
+  height: 130px;
 
   order: 1;
-  z-index: 2;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    z-index: 1;
   }
 }
 
 .pick-program__button {
+  margin-top: 6px;
   order: 2;
 
   @media (min-width: $tablet-width) {
     order: 1;
-    z-index: 2;
   }
 }
