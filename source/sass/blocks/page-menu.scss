@@ -90,7 +90,7 @@
     line-height: 1.39;
   }
 
-  &:hover:not(&--active) {
+  &:hover {
     color: rgba($color-text, 0.6);
   }
 
@@ -101,7 +101,19 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 1.25;
-    color: #ffffff;
+  }
+
+  &--bg-active,
+  &--bg {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+
+    &:hover {
+      @media (min-width: $desktop-width) {
+        color: rgba(#ffffff, 0.6);
+      }
+    }
   }
 }
 
