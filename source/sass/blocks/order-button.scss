@@ -1,9 +1,11 @@
 .order-button {
+  width: 280px;
+
   line-height: 1.25;
   font-size: 16px;
 
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 169px;
