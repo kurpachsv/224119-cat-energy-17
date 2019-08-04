@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
+    margin-top: 44px;
   }
 }
 
@@ -67,6 +68,8 @@
   @media (min-width: $tablet-width) {
     width: 325px;
     height: 291px;
+
+    margin-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,14 +88,14 @@
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 5px;
 
     font-size: 60px;
     line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 

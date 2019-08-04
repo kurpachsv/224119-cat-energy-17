@@ -62,8 +62,8 @@
     width: 22px;
     height: 12px;
 
-    top: 4px;
-    left: 4px;
+    top: -8px;
+    left: -8px;
 
     background-image: url("../img/icon-vk.svg");
 
@@ -72,7 +72,7 @@
       height: 16px;
 
       left: -8px;
-      top: -7px;
+      top: -11px;
     }
   }
 
@@ -80,8 +80,8 @@
     width: 17px;
     height: 17px;
 
-    top: 2px;
-    left: 2px;
+    top: -10px;
+    left: -8px;
 
     background-image: url("../img/icon-insta.svg");
 
@@ -90,13 +90,16 @@
       height: 23px;
 
       left: -10px;
-      top: -10px;
+      top: -13px;
     }
   }
 
   &--fb::before {
     width: 10px;
     height: 19px;
+
+    top: -11px;
+    left: -12px;
 
     background-image: url("../img/icon-fb.svg");
 
@@ -105,7 +108,7 @@
       height: 28px;
 
       left: -17px;
-      top: -14px;
+      top: -17px;
     }
   }
 }
