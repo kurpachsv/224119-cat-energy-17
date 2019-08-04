@@ -26,7 +26,8 @@
 
   @media (min-width: $desktop-width) {
     width: 145px;
-    margin-top: 155px;
+
+    margin-top: 140px;
   }
 }
 
@@ -51,11 +52,14 @@
     font-size: 16px;
     font-weight: normal;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 .more-products__show-all {
   @media (min-width: $tablet-width) {
-    width: 250px;
     margin-top: 85px;
   }
 }

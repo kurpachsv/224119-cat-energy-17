@@ -20,6 +20,13 @@
       background-repeat: no-repeat;
     }
   }
+
+  &--catalog {
+    &::after {
+      background-color: transparent;
+      background-image: none;
+    }
+  }
 }
 
 .page-header__wrapper {

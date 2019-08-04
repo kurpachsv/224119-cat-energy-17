@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     min-height: 4010px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 2156px;
+  }
 }
 
 .page-catalog__products {
