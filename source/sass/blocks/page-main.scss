@@ -8,6 +8,18 @@
     margin-top: 20px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 2463px;
+
+    margin-top: 71px;
+  }
+}
+
+.page-main__pick-program {
+  @media (min-width: $desktop-width) {
+    margin-left: 62px;
+  }
 }
 
 .page-main__features {

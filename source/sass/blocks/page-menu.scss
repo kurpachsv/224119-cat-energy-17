@@ -15,6 +15,14 @@
       text-align: right;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+
+    :first-child {
+      min-width: 200px;
+    }
+  }
 }
 
 .page-menu__item {
@@ -53,6 +61,17 @@
 
     margin-right: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 200px;
+    margin-right: 3px;
+
+    text-align: right;
+
+    &:last-child {
+      margin-right: -5px;
+    }
+  }
 }
 
 .page-menu__link {
@@ -77,6 +96,12 @@
 
   &--down {
     color: rgba($color-text, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
   }
 }
 

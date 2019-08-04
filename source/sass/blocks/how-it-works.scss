@@ -68,6 +68,10 @@
     width: 325px;
     height: 291px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .how-it-works__title {
@@ -85,6 +89,10 @@
 
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
   }
 }
 
