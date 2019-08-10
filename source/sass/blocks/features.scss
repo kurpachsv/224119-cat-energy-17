@@ -1,4 +1,8 @@
 .features {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+
   color: #444444;
   background-color: #ffffff;
 }
@@ -34,10 +38,6 @@
 
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
-  }
-
   &--slim::before,
   &--fat::before {
     @include pseudo;
@@ -58,7 +58,7 @@
       height: 200px;
 
       left: 368px;
-      top: 86px;
+      top: 93px;
 
       margin-left: 80px;
     }
@@ -80,7 +80,7 @@
       height: 194px;
 
       left: 476px;
-      top: 80px;
+      top: 82px;
     }
   }
 
@@ -105,10 +105,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 373px;
-
-    padding: 53px;
-    margin-bottom: 34px;
+    padding: 63px 43px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,15 +158,9 @@
 
   color: #111111;
 
-  &--fat {
-    margin-left: 38px;
-    margin-top: 14px;
-  }
-
   @media (min-width: $tablet-width) {
+    margin-top: 16px;
     width: 350px;
-    margin-left: 20px;
-    margin-top: 10px;
 
     text-align: left;
 
@@ -212,10 +204,16 @@
 
   @media (min-width: $tablet-width) {
     width: 380px;
-    margin-top: 25px;
+
+    padding-top: 25px;
+    padding-bottom: 38px;
+    margin: 0;
+    margin-left: 8px;
 
     font-size: 16px;
     line-height: 1.5;
+
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,8 +224,7 @@
 
   &--fat {
     @media (min-width: $tablet-width) {
-      margin-top: 22px;
-      margin-left: -1px;
+      width: 343px;
     }
   }
 }
@@ -257,15 +254,16 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 6px;
-      left: 133px;
+      top: 5px;
+      left: 131px;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 350px;
 
-    margin-top: 55px;
+    margin-top: 15px;
+    margin-left: 10px;
 
     font-size: 20px;
     line-height: 1;
