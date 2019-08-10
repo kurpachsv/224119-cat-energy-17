@@ -30,7 +30,7 @@
   justify-content: center;
 
   padding: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   background-color: #f2f2f2;
 
@@ -149,7 +149,7 @@
 .features__title {
   margin: 0;
   margin-left: 10px;
-  margin-top: 12px;
+  margin-top: 10px;
   padding: 0;
 
   font-size: 24px;
@@ -162,6 +162,7 @@
 
   &--fat {
     margin-left: 38px;
+    margin-top: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -196,14 +197,18 @@
 }
 
 .features__description {
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 20px;
 
   font-family: $sec-font;
   font-size: 14px;
   line-height: 1.29;
 
   color: #444444;
+  border-bottom: 1px solid rgba(#444444, 0.1);
 
   @media (min-width: $tablet-width) {
     width: 380px;
@@ -230,8 +235,6 @@
 .features__link {
   position: relative;
 
-  margin-top: 40px;
-
   font-size: 16px;
   line-height: 1;
 
@@ -241,7 +244,7 @@
   color: #111111;
 
   &::after {
-    @include pseudo(inline-block);
+    @include pseudo;
 
     top: 4px;
     left: 95px;
@@ -256,19 +259,6 @@
     @media (min-width: $tablet-width) {
       top: 6px;
       left: 133px;
-    }
-  }
-
-  &::before {
-    @include pseudo(block, relative);
-
-    bottom: 19px;
-    left: 0;
-
-    border-top: 1px solid rgba(#444444, 0.1);
-
-    @media (min-width: $tablet-width) {
-      display: none;
     }
   }
 
