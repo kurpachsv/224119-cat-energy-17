@@ -14,6 +14,17 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      width: 50%;
+      height: 696px;
+
+      top: 0;
+      right: 0;
+
+      background-size: cover;
+    }
   }
 
   &--catalog {
