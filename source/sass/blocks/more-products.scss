@@ -1,14 +1,37 @@
 .more-products {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   color: #111111;
   background-color: #ffffff;
+
+  &::after {
+    @include pseudo;
+
+    top: 25px;
+    left: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+
+    background-image: url("../img/icon-plus.svg");
+    background-color: rgba(#ffffff, 0.2);
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      height: 60px;
+      width: 60px;
+    }
+  }
 }
 
 .more-products__text {
-  margin-top: 81px;
+  margin-top: 76px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -18,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin-top: 135px;
+    margin-top: 168px;
 
     font-size: 20px;
     line-height: 1;
@@ -50,7 +73,8 @@
     margin-top: 24px;
 
     font-size: 16px;
-    font-weight: normal;
+    line-height: 1.2;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {

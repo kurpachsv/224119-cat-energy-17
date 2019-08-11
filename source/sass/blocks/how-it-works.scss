@@ -3,7 +3,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top: 12px;
+    margin-top: 19px;
   }
 }
 
@@ -32,6 +32,8 @@
 .how-it-works__item {
   position: relative;
   margin-top: 27px;
+
+  z-index: 1;
 
   &::before {
     @include pseudo;
@@ -66,6 +68,32 @@
 
   &--weight::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    @include pseudo($display: none);
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--leaf::after {
+    @include how-it-works-counter("1");
+
+    left: 119px;
+  }
+
+  &--instant::after {
+    @include how-it-works-counter("2");
+  }
+
+  &--water::after {
+    @include how-it-works-counter("3");
+  }
+
+  &--weight::after {
+    @include how-it-works-counter("4");
   }
 
   @media (min-width: $tablet-width) {
