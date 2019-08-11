@@ -1,24 +1,38 @@
 .more-products {
-  color: #111111;
-  background-color: #ffffff;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    height: 432px;
+  color: #111111;
+  background-color: #ffffff;
 
-    border: solid 1px #cdcdcd;
-  }
+  &::after {
+    @include pseudo;
 
-  @media (min-width: $desktop-width) {
-    width: 245px;
+    top: 25px;
+    left: 0;
+    right: 0;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+
+    background-image: url("../img/icon-plus.svg");
+    background-color: rgba(#ffffff, 0.2);
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      height: 60px;
+      width: 60px;
+    }
   }
 }
 
-.more-products__title {
+.more-products__text {
+  margin-top: 76px;
+
   font-size: 16px;
   line-height: 1.25;
 
@@ -26,17 +40,26 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 170px;
+    margin-top: 168px;
 
     font-size: 20px;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 145px;
+
+    margin-top: 140px;
   }
 }
 
-.more-products__subtitle {
+.more-products__slogan {
+  margin: 0;
+  margin-top: 9px;
+  margin-left: -4px;
+  padding: 0;
+
   font-family: $sec-font;
   font-size: 12px;
   line-height: 1.33;
@@ -47,22 +70,20 @@
 
   @media (min-width: $tablet-width) {
     width: 200px;
+    margin-top: 24px;
 
     font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
   }
-}
 
-.more-products__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    min-height: 300px;
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
   }
 }
 
 .more-products__show-all {
-  margin-top: 26px;
+  @media (min-width: $tablet-width) {
+    margin-top: 85px;
+  }
 }

@@ -4,7 +4,20 @@
   position: $position;
 }
 
-@mixin last-row($margin-left: 60px) {
-  content: "";
-  flex: auto;
+@mixin how-it-works-counter($number) {
+  top: -40px;
+  left: 113px;
+
+  content: $number;
+
+  font-family: $main-font;
+
+  font-size: 281px;
+  line-height: 1;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: #f2f2f2;
+
+  z-index: -1;
 }

@@ -1,5 +1,17 @@
+.page-catalog {
+  min-height: 3163px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 4038px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 2156px;
+  }
+}
+
 .page-catalog__products {
-  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .page-catalog__more-products {

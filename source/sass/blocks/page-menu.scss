@@ -9,6 +9,19 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+
+    :first-child {
+      min-width: 148px;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+
+    :first-child {
+      min-width: 200px;
+    }
   }
 }
 
@@ -16,33 +29,69 @@
   position: relative;
   display: block;
 
+  min-width: 174px;
+
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-right: 6px;
 
   text-align: center;
 
+  &::before {
+    @include pseudo(block, relative);
+
+    margin-left: -20px;
+    margin-right: -20px;
+
+    bottom: 24px;
+    left: 0;
+
+    border-top: 1px solid rgba(#444444, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
-    margin-right: 50px;
+    &::before,
+    &::after {
+      display: none;
+    }
 
     &:last-child {
       margin-right: 0;
+    }
+
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 200px;
+    margin-right: 3px;
+
+    text-align: right;
+
+    &:last-child {
+      margin-right: -5px;
     }
   }
 }
 
 .page-menu__link {
+  position: relative;
+
   font-size: 20px;
   line-height: 1.25;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+
   color: $color-text;
 
-  &--active {
-    border-bottom: 2px solid #68b738;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.39;
+    font-weight: 400;
   }
 
-  &:hover:not(&--active) {
+  &:hover {
     color: rgba($color-text, 0.6);
   }
 
@@ -50,23 +99,49 @@
     color: rgba($color-text, 0.3);
   }
 
-  @media (min-width: $tablet-width) {
-    font-weight: 400;
+  &--active {
+    &::after {
+      @include pseudo;
+
+      bottom: -6px;
+      right: 0;
+
+      height: 2px;
+      width: 100%;
+
+      background: #68b738;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.25;
+  }
 
-    &--active {
-      border-bottom: 2px solid #ffffff;
+  &--bg-active,
+  &--bg {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
     }
 
-    &:hover:not(&--active) {
-      color: rgba(#ffffff, 0.6);
+    &:hover {
+      @media (min-width: $desktop-width) {
+        color: rgba(#ffffff, 0.6);
+      }
     }
+  }
 
-    &--down {
-      color: rgba(#ffffff, 0.3);
+  &--bg-active {
+    &::after {
+      @include pseudo;
+
+      bottom: -6px;
+      right: 0;
+
+      height: 2px;
+      width: 100%;
+
+      background: #ffffff;
     }
   }
 }

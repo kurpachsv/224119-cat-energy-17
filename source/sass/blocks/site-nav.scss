@@ -1,4 +1,8 @@
-.page-navigation__toggle {
+.site-nav {
+  z-index: 1;
+}
+
+.site-nav__toggle {
   @media (min-width: $tablet-width) {
     display: none;
   }

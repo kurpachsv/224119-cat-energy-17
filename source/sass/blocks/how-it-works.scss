@@ -1,8 +1,10 @@
 .how-it-works {
-  padding: 20px;
-
   color: #444444;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
 }
 
 .how-it-works__list {
@@ -16,19 +18,22 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 70px;
+    margin-top: 50px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
+    margin-top: 44px;
   }
 }
 
 .how-it-works__item {
   position: relative;
-  margin-top: 30px;
+  margin-top: 27px;
+
+  z-index: 1;
 
   &::before {
     @include pseudo;
@@ -37,7 +42,7 @@
     height: 60px;
 
     left: 0;
-    top: 0;
+    top: -3px;
 
     background-color: #68b738;
     background-position: center center;
@@ -50,24 +55,56 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--instant::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
   }
 
   &--water::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--weight::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    @include pseudo($display: none);
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--leaf::after {
+    @include how-it-works-counter("1");
+
+    left: 119px;
+  }
+
+  &--instant::after {
+    @include how-it-works-counter("2");
+  }
+
+  &--water::after {
+    @include how-it-works-counter("3");
+  }
+
+  &--weight::after {
+    @include how-it-works-counter("4");
   }
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-    height: 300px;
+    width: 325px;
+    height: 291px;
+
+    margin-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -85,10 +122,16 @@
     font-size: 60px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 .how-it-works__description {
-  margin-left: 70px;
+  margin: 0;
+  margin-left: 80px;
+  padding: 0;
 
   font-family: $sec-font;
   font-size: 14px;
@@ -97,8 +140,8 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    min-width: 100px;
-    margin-top: 100px;
+    max-width: 245px;
+    margin-top: 110px;
     margin-left: 0;
 
     font-size: 16px;

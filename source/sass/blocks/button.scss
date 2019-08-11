@@ -1,5 +1,5 @@
 .button {
-  width: 280px;
+  min-width: 100px;
 
   font: inherit;
 
@@ -27,16 +27,23 @@
   }
 
   &--show-all {
-    line-height: 1.25;
+    width: 100%;
+    margin-top: 23px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
-    padding-top: 13px;
-    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.25;
 
     color: #444444;
     background-color: #f2f2f2;
-  }
 
-  @media (min-width: $desktop-width) {
-    width: 169px;
+    @media (min-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 170px;
+    }
   }
 }
