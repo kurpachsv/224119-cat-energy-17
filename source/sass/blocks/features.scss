@@ -57,8 +57,17 @@
       width: 200px;
       height: 200px;
 
-      left: 368px;
+      left: 444px;
       top: 93px;
+    }
+  }
+
+  &--fat::before {
+    left: 448px;
+    top: 30px;
+
+    @media (min-width: $tablet-width) {
+      top: 90px;
     }
   }
 
@@ -89,7 +98,7 @@
     height: 28px;
 
     left: 13px;
-    top: 36px;
+    top: 42px;
 
     background-image: url("../img/icon-cat-pro.svg");
 
@@ -158,6 +167,11 @@
 
   color: #111111;
 
+  &--fat {
+    margin-left: 38px;
+    margin-top: 17px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 16px;
     width: 350px;
@@ -166,17 +180,22 @@
 
     font-size: 36px;
     line-height: 1.03;
+
+    &--fat {
+      margin-left: 10px;
+      margin-top: 13px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     top: 0;
 
+    min-height: 80px;
     width: auto;
-    min-height: 100px;
 
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 23px;
+    margin-top: 17px;
 
     text-align: center;
 
@@ -192,9 +211,9 @@
 .features__description {
   padding: 0;
   padding-top: 30px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-family: $sec-font;
   font-size: 14px;
@@ -206,10 +225,10 @@
   @media (min-width: $tablet-width) {
     width: 380px;
 
-    padding-top: 14px;
-    padding-bottom: 32px;
     margin: 0;
     margin-left: 8px;
+    padding-top: 24px;
+    padding-bottom: 41px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -219,11 +238,20 @@
 
   @media (min-width: $desktop-width) {
     width: 470px;
+
+    padding-top: 32px;
+    padding-bottom: 30px;
   }
 
   &--fat {
     @media (min-width: $tablet-width) {
-      padding-top: 22px;
+      width: 340px;
+      padding-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 470px;
+      padding-top: 43px;
     }
   }
 }
