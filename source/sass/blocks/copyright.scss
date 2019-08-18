@@ -17,6 +17,10 @@
   line-height: 1;
 
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0px;
+  }
 }
 
 .copyright__logo {
