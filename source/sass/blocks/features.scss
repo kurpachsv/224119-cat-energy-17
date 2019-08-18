@@ -63,9 +63,6 @@
   }
 
   &--fat::before {
-    left: 448px;
-    top: 30px;
-
     @media (min-width: $tablet-width) {
       top: 90px;
     }

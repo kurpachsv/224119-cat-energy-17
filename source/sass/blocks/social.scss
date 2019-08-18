@@ -1,4 +1,14 @@
 .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1px;
+    margin-left: 16px;
+  }
+
   &::before {
     @include pseudo($position: relative);
 
@@ -33,16 +43,38 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 0;
   }
 
   list-style: none;
 }
 
 .social__item {
-  width: 24px;
-  height: 24px;
-  margin: 0 16px;
+  margin: 0 14px;
 
   cursor: pointer;
+
+  &:not(:last-child) {
+    padding-top: 4px;
+  }
 }
+
+.social__icon {
+  fill: #666666;
+
+  &--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  &--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  &--fb {
+    width: 14px;
+    height: 28px;
+  }
+}
+
