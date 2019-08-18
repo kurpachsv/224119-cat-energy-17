@@ -37,8 +37,12 @@
 
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
   &::before {
-    @include pseudo(block, relative);
+    @include pseudo($position: relative);
 
     margin-left: -20px;
     margin-right: -20px;
@@ -57,16 +61,15 @@
 
     &:last-child {
       margin-right: 0;
+      padding-right: 0;
     }
 
-    margin-right: 18px;
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 200px;
     margin-right: 3px;
-
-    text-align: right;
 
     &:last-child {
       margin-right: -5px;
@@ -137,13 +140,17 @@
     &::after {
       @include pseudo;
 
-      bottom: -6px;
-      right: 0;
+      bottom: -8px;
+      right: 2px;
 
       height: 2px;
       width: 100%;
 
       background: #ffffff;
+
+      @media (min-width: $tablet-width) {
+        background: #68b738;
+      }
     }
   }
 }
