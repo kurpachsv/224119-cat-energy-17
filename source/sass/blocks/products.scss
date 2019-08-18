@@ -28,8 +28,7 @@
   display: flex;
   flex-direction: column;
 
-  padding-bottom: 20px;
-  padding-top: 10px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 24px;
@@ -231,6 +230,8 @@
   flex-direction: column;
 
   width: 50%;;
+  margin-top: 9px;
+  margin-left: -3px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
