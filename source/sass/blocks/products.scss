@@ -168,10 +168,13 @@
   left: 0;
   right: 0;
 
+  width: 140px;
+
   @media (min-width: $tablet-width) {
     bottom: -111px;
     top: inherit;
 
+    width: 324px;
     margin: 0 auto;
   }
 }
