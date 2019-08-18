@@ -1,27 +1,14 @@
 .social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
   @media (min-width: $tablet-width) {
     margin-top: 1px;
     margin-left: 16px;
   }
 
-  &::before {
-    @include pseudo($position: relative);
-
-    bottom: 4px;
-    left: 0;
-
-    border-top: 1px solid rgba(#444444, 0.1);
-  }
-
+  &::before,
   &::after {
     @include pseudo($position: relative);
 
-    bottom: 6px;
+    bottom: 2px;
     left: 0;
 
     border-top: 1px solid rgba(#444444, 0.1);
@@ -37,44 +24,71 @@
 
 .social__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 19px 0;
-  margin-left: 5px;
+  margin: 18px 0;
+  margin-left: -10px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin-left: 5px;
   }
 
   list-style: none;
 }
 
 .social__item {
-  margin: 0 14px;
+  margin: 0 19px;
+
+  &:not(:first-child) {
+    margin-top: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 14px;
+
+    &:not(:last-child) {
+      padding-top: 4px;
+    }
+  }
 
   cursor: pointer;
-
-  &:not(:last-child) {
-    padding-top: 4px;
-  }
 }
 
 .social__icon {
   fill: #666666;
 
   &--vk {
-    width: 30px;
-    height: 16px;
+    width: 22px;
+    height: 12px;
   }
 
   &--inst {
-    width: 23px;
-    height: 23px;
+    width: 17px;
+    height: 17px;
   }
 
   &--fb {
-    width: 14px;
-    height: 28px;
+    width: 10px;
+    height: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
 
