@@ -41,6 +41,11 @@
     text-align: right;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    margin-left: 1px;
+  }
+
   &::before {
     @include pseudo($position: relative);
 
@@ -72,7 +77,8 @@
     margin-right: 3px;
 
     &:last-child {
-      margin-right: -5px;
+      margin-right: 0;
+      margin-left: -5px;
     }
   }
 }
@@ -150,6 +156,10 @@
 
       @media (min-width: $tablet-width) {
         background: #68b738;
+      }
+
+      @media (min-width: $desktop-width) {
+        background: #ffffff;
       }
     }
   }

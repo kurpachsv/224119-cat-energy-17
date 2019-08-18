@@ -3,6 +3,10 @@
     margin-top: 8px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+
   color: #444444;
   background-color: #ffffff;
 }
