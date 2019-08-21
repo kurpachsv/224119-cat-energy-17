@@ -9,7 +9,6 @@
 .copyright__text {
   margin: 0;
   margin-top: -5px;
-  margin-left: -2px;
   padding: 0;
 
   font-family: $sec-font;
@@ -19,7 +18,7 @@
   color: #444444;
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-right: 15px;
   }
 }
 
@@ -27,11 +26,11 @@
   margin-top: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 22px;
+    margin-right: -7px;
   }
 }
 
 .copyright__logo-image {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
 }

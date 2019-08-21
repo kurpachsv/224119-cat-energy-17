@@ -95,16 +95,13 @@
   height: 270px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
-
     position: absolute;
+
     bottom: 0;
     right: 0;
 
     width: 709px;
     height: 609px;
-
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
