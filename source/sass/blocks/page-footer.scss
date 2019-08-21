@@ -14,22 +14,23 @@
 
 .page-footer__logo-image {
   width: 128px;
-  height: 24px;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
 
+  padding-top: 16px;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    height: 100px;
+    height: 139px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 150px;
+    height: 135px;
   }
 }

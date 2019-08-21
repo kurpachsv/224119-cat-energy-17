@@ -4,7 +4,15 @@
     margin-left: 14px;
   }
 
-  &::before,
+  &::before {
+    @include pseudo($position: relative);
+
+    bottom: 4px;
+    left: 0;
+
+    border-top: 1px solid rgba(#444444, 0.1);
+  }
+
   &::after {
     @include pseudo($position: relative);
 
@@ -15,6 +23,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 11px;
+
     &::before,
     &::after {
       display: none;
@@ -27,7 +37,7 @@
   justify-content: center;
   align-items: center;
 
-  margin: 18px 0;
+  margin: 16px 0;
   margin-left: -10px;
   padding: 0;
 

@@ -3,12 +3,22 @@
   justify-content: space-between;
   align-items: center;
 
-  height: 75px;
+  padding-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-right: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
 }
 
 .copyright__text {
   margin: 0;
-  margin-top: -5px;
+  margin-top: -8px;
+  margin-left: -2px;
   padding: 0;
 
   font-family: $sec-font;
@@ -17,16 +27,20 @@
 
   color: #444444;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 15px;
   }
 }
 
 .copyright__logo {
-  margin-top: 5px;
+  margin-right: -6px;
 
   @media (min-width: $tablet-width) {
-    margin-right: -7px;
+    margin-right: 0;
   }
 }
 
