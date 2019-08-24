@@ -31,7 +31,7 @@
 }
 
 .more-products__text {
-  margin-top: 76px;
+  margin-top: 80px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -41,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin-top: 168px;
+    margin-top: 162px;
 
     font-size: 20px;
     line-height: 1;
@@ -50,14 +50,14 @@
   @media (min-width: $desktop-width) {
     width: 145px;
 
-    margin-top: 140px;
+    margin-top: 160px;
   }
 }
 
 .more-products__slogan {
   margin: 0;
-  margin-top: 9px;
-  margin-left: -4px;
+  margin-top: 8px;
+  margin-left: -2px;
   padding: 0;
 
   font-family: $sec-font;
@@ -70,7 +70,7 @@
 
   @media (min-width: $tablet-width) {
     width: 200px;
-    margin-top: 24px;
+    margin-top: 25px;
 
     font-size: 16px;
     line-height: 1.2;
@@ -84,6 +84,6 @@
 
 .more-products__show-all {
   @media (min-width: $tablet-width) {
-    margin-top: 85px;
+    margin-top: 88px;
   }
 }

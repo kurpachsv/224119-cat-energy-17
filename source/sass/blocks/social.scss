@@ -1,4 +1,9 @@
 .social {
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+    margin-left: 14px;
+  }
+
   &::before {
     @include pseudo($position: relative);
 
@@ -11,13 +16,15 @@
   &::after {
     @include pseudo($position: relative);
 
-    bottom: 6px;
+    bottom: 2px;
     left: 0;
 
     border-top: 1px solid rgba(#444444, 0.1);
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 11px;
+
     &::before,
     &::after {
       display: none;
@@ -27,22 +34,70 @@
 
 .social__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 19px 0;
-  margin-left: 5px;
+  margin: 16px 0;
+  margin-left: -10px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 5px;
   }
 
   list-style: none;
 }
 
 .social__item {
-  width: 24px;
-  height: 24px;
-  margin: 0 16px;
+  margin: 0 19px;
+
+  &:not(:first-child) {
+    margin-top: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 14px;
+
+    &:not(:last-child) {
+      padding-top: 4px;
+    }
+  }
 
   cursor: pointer;
+}
+
+.social__icon {
+  fill: #666666;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--inst {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

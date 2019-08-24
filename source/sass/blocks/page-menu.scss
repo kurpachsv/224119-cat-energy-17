@@ -11,7 +11,9 @@
     flex-direction: row;
 
     :first-child {
-      min-width: 148px;
+      min-width: auto;
+      margin-right: 1px;
+
       text-align: right;
     }
   }
@@ -29,16 +31,23 @@
   position: relative;
   display: block;
 
-  min-width: 174px;
+  min-width: 187px;
 
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 6px;
 
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+  }
+
   &::before {
-    @include pseudo(block, relative);
+    @include pseudo($position: relative);
 
     margin-left: -20px;
     margin-right: -20px;
@@ -57,19 +66,17 @@
 
     &:last-child {
       margin-right: 0;
+      padding-right: 0;
     }
-
-    margin-right: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 200px;
-    margin-right: 3px;
-
-    text-align: right;
+    min-width: 203px;
+    margin-right: 5px;
 
     &:last-child {
-      margin-right: -5px;
+      margin-right: -3px;
+      margin-left: -3px;
     }
   }
 }
@@ -99,17 +106,19 @@
     color: rgba($color-text, 0.3);
   }
 
-  &--active {
-    &::after {
-      @include pseudo;
+  @media (min-width: $tablet-width) {
+    &--active {
+      &::after {
+        @include pseudo;
 
-      bottom: -6px;
-      right: 0;
+        bottom: -8px;
+        right: 0;
 
-      height: 2px;
-      width: 100%;
+        height: 2px;
+        width: 100%;
 
-      background: #68b738;
+        background: #68b738;
+      }
     }
   }
 
@@ -135,13 +144,21 @@
     &::after {
       @include pseudo;
 
-      bottom: -6px;
+      bottom: -8px;
       right: 0;
 
       height: 2px;
       width: 100%;
 
       background: #ffffff;
+
+      @media (min-width: $tablet-width) {
+        background: #68b738;
+      }
+
+      @media (min-width: $desktop-width) {
+        background: #ffffff;
+      }
     }
   }
 }
