@@ -65,7 +65,7 @@
       width: 200px;
       height: 200px;
 
-      right: 60px;
+      right: 62px;
       left: inherit;
       top: 93px;
     }
@@ -85,8 +85,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
-    padding-top: 54px;
+    display: block;
+
+    min-width: 570px;
+    padding-top: 58px;
     padding-bottom: 54px;
 
     &::before {
@@ -125,27 +127,28 @@
   margin: 0;
   margin-left: 10px;
   margin-top: 10px;
+
   padding: 0;
+  padding-left: 62px;
 
   font-size: 24px;
   font-weight: 400;
   line-height: 1.54;
   text-transform: uppercase;
-  text-align: center;
 
   color: #111111;
 
   &--fat {
-    margin-left: 38px;
     margin-top: 9px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 16px;
     width: 350px;
 
-    text-align: left;
+    padding-left: 0;
+    margin-top: 16px;
 
+    text-align: left;
     font-size: 36px;
     line-height: 1.03;
 
@@ -195,7 +198,7 @@
     margin-left: 8px;
     padding-top: 24px;
     padding-bottom: 41px;
-    padding-right: 325px;
+    padding-right: 240px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -208,16 +211,19 @@
 
     padding-top: 32px;
     padding-bottom: 30px;
+    padding-right: 0;
   }
 
   &--fat {
     @media (min-width: $tablet-width) {
+      padding-right: 270px;
       padding-top: 25px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 470px;
-      padding-top: 43px;
+      min-width: 470px;
+      padding-right: 0;
+      padding-top: 38px;
     }
   }
 }
@@ -273,9 +279,18 @@
     width: 140px;
     height: 194px;
 
-    right: 60px;
+    right: 92px;
     left: inherit;
     top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 38px;
+    left: 67px;
+    right: inherit;
+
+    width: 71px;
+    height: 97px;
   }
 }
 
@@ -293,9 +308,18 @@
     width: 268px;
     height: 112px;
 
-    right: 60px;
+    right: 28px;
     left: inherit;
-    top: 132px;
+    top: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 69px;
+    left: 35px;
+    right: inherit;
+
+    width: 134px;
+    height: 57px;
   }
 }
 
