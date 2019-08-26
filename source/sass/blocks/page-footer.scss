@@ -1,6 +1,4 @@
 .page-footer {
-  margin-top: 4px;
-
   background-color: #f2f2f2;
 }
 
@@ -28,6 +26,7 @@
     align-items: center;
 
     height: 139px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {

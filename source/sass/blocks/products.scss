@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin-top: 136px;
+    margin-top: 135px;
   }
 }
 
@@ -29,8 +29,9 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 40px;
     padding-bottom: 24px;
-    height: 431px;
+    height: 100%;
   }
 
   &::after {
@@ -53,7 +54,8 @@
     align-items: center;
 
     min-width: 324px;
-    width: calc(50% - 60px);
+    width: calc(50% - 30px);
+    min-height: 431px;
 
     margin-bottom: 140px;
     margin-right: 60px;
@@ -68,8 +70,9 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     width: calc(25% - 60px);
-    height: 436px;
+    height: 400px;
     margin-right: 0;
+    margin-bottom: 142px;
 
     background-color: #f2f2f2;
   }
@@ -139,16 +142,19 @@
 
 .products__image-link {
   display: block;
+  width: 50%;
   height: 144px;
 
   @media (min-width: $tablet-width) {
-    height: 208px;
-
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
 
-    margin: auto;
-    margin-top: -77px;
+    height: 213px;
+    width: auto;
+
+    margin: -121px -40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,7 +163,9 @@
 }
 
 .products__image {
-  width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .products__link {
@@ -182,19 +190,19 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    width: 252px;
-    margin: 0 auto;
-    padding-top: 18px;
+    min-width: 252px;
+    margin: 0 -5px;
+    padding-top: 20px;
 
     font-size: 16px;
     line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 170px;
+    min-width: 170px;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -2px;
+    margin-right: -2px;
     margin-top: 0;
   }
 }
@@ -227,7 +235,7 @@
     width: 100%;
 
     padding-top: 0;
-    margin-top: -25px;
+    margin-top: -26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -237,6 +245,7 @@
 
 .products__content {
   display: flex;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
