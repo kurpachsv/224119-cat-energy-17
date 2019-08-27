@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var cheerio = require("gulp-cheerio");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
@@ -43,6 +44,13 @@ gulp.task("images", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-,logo-,htmlacademy}*.svg")
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+        $("[class]").removeAttr("class");
+      },
+      parserOptions: {xmlMode: true}
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
