@@ -12,7 +12,7 @@
     <include src="build/img/sprite.svg"></include>
   </svg>
 
-  <header class="page-header">
+  <header class="page-header page-header--without-bg">
     <div class="container-fluid">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -41,6 +41,88 @@
   </header>
   <main>
     <div class="container-fluid">
+      <section class="choose-program">
+        <h2 class="choose-program__header">Подбор программы</h2>
+        <div class="choose-program__description">
+          Заполните анкету и мы подберем
+          программу питания для вашего кота
+        </div>
+        <form class="program-form" action="https://echo.htmlacademy.ru">
+          <div class="program-form__fieldset">
+            <div class="program-form__row">
+              <label class="program-form__label program-form__label--text" for="program-form-name">Имя:*</label>
+              <input id="program-form-name" class="program-form__control program-form__control--text" value="Барсик">
+            </div>
+            <div class="program-form__row">
+              <label class="program-form__label program-form__label--text" for="program-form-weight">Вес (кг):*</label>
+              <input id="program-form-weight" class="program-form__control program-form__control--text" value="7">
+            </div>
+            <div class="program-form__row">
+              <label class="program-form__label program-form__label--text" for="program-form-age">Возраст (лет):</label>
+              <input id="program-form-age" class="program-form__control program-form__control--text" value="7">
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <div class="program-form__row">
+              <input type="radio" id="program-form-weight-loss" class="program-form__control program-form__control--text" name="program-form-weight-loss" checked>
+              <label for="program-form-weight-loss">Похудение</label>
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <div class="program-form__row">
+              <input type="radio" id="program-form-weight-gain" name="program-form-weight-gain">
+              <label for="program-form-weight-gain">Набор массы</label>
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <div class="program-form__row">
+              <input type="radio" id="program-form-advice" name="program-form-advice" value="program-form-advice">
+              <label for="program-form-advice">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <h3>Контактные данные
+              (владельца кота)</h3>
+            <div class="program-form__row">
+              <label for="program-form-email">E-mail:*</label>
+              <input type="text" id="program-form-email" name="program-form-email" value="kuklachev@gmail.com">
+            </div>
+            <div class="program-form__row">
+              <label for="program-form-phone">Телефон:*</label>
+              <input type="text" id="program-form-phone" name="program-form-phone" value="8 (960) 900-60-90">
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <h3>Комментарий</h3>
+            <div class="program-form__row">
+              <label>
+                <textarea class="program-form-about-cat">Расскажите обо всех повадках кота</textarea>
+              </label>
+            </div>
+          </div>
+          <div class="program-form__fieldset">
+            <h3>Дополнительно</h3>
+            <div class="program-form__row">
+              <input type="checkbox" id="program-form-sweetener" name="program-form-sweetener" checked>
+              <label for="program-form-sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" id="program-form-water" name="program-form-water">
+              <label for="program-form-water">Питьевая вода</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" id="program-form-milk" name="program-form-milk">
+              <label for="program-form-milk">Молоко</label>
+            </div>
+            <div class="program-form__row">
+              <input type="checkbox" id="program-form-vitamins" name="program-form-vitamins">
+              <label for="program-form-vitamins">Витамины</label>
+            </div>
+          </div>
+          <input class="program-form__send-request" type="submit" value="Отправить заявку">
+          <div class="program-form__comments">* — Обязательные поля</div>
+        </form>
+      </section>
     </div>
   </main>
   <footer class="page-footer">

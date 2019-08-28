@@ -40,6 +40,12 @@
       background-image: none;
     }
   }
+
+  &--without-bg {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-header__wrapper {
