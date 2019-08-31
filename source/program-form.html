@@ -39,7 +39,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="with-overflow">
     <div class="container-fluid">
       <section class="program-form">
         <form class="program-form" action="https://echo.htmlacademy.ru">
@@ -63,23 +63,25 @@
             </div>
           </fieldset>
           <fieldset class="program-form__fieldset">
-            <div class="program-form__row">
-              <input type="radio" id="program-form-weight-loss" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-loss" checked>
-              <label class="program-form__label program-form__label--radio" for="program-form-weight-loss">Похудение</label>
-            </div>
-            <div class="program-form__row">
-              <input type="radio" id="program-form-weight-gain" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-gain">
-              <label class="program-form__label program-form__label--radio"  for="program-form-weight-gain">Набор массы</label>
-            </div>
-            <div class="program-form__row">
-              <input type="radio" id="program-form-advice" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-advice">
-              <label class="program-form__label program-form__label--radio" for="program-form-advice">Не знаю (Нужен ваш совет)</label>
+            <div class="program-form__column program-form__column--goal">
+              <div class="program-form__row">
+                <input type="radio" id="program-form-weight-loss" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-loss" checked>
+                <label class="program-form__label program-form__label--radio" for="program-form-weight-loss">Похудение</label>
+              </div>
+              <div class="program-form__row">
+                <input type="radio" id="program-form-weight-gain" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-gain">
+                <label class="program-form__label program-form__label--radio"  for="program-form-weight-gain">Набор массы</label>
+              </div>
+              <div class="program-form__row">
+                <input type="radio" id="program-form-advice" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-advice">
+                <label class="program-form__label program-form__label--radio" for="program-form-advice">Не знаю (Нужен ваш совет)</label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset--without-border">
             <legend class="program-form__subheader">Контактные данные
               (владельца кота)</legend>
-            <ul class="program-form__column">
+            <ul class="program-form__column program-form__column--contacts">
               <li class="program-form__row program-form__row--email-row">
                 <label class="program-form__label program-form__label--text" for="program-form-email">E-mail:*</label>
                 <input class="program-form__control program-form__control--text" type="email" id="program-form-email" name="program-form-email" value="kuklachev@gmail.com">
@@ -92,7 +94,7 @@
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset--without-border">
             <legend class="program-form__subheader">Комментарий</legend>
-            <ul class="program-form__column">
+            <ul class="program-form__column program-form__column--comment">
               <li class="program-form__row">
                 <label class="program-form__label program-form__label--textarea">
                   <textarea class="program-form__control program-form__control--textarea" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -102,7 +104,7 @@
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset--without-border">
             <legend class="program-form__subheader">Дополнительно</legend>
-            <ul class="program-form__column">
+            <ul class="program-form__column program-form__column--misc">
               <li class="program-form__row">
                 <input class="program-form__control program-form__control--checkbox" type="checkbox" id="program-form-sweetener" name="program-form-sweetener" checked>
                 <label class="program-form__label program-form__label--checkbox" for="program-form-sweetener">Сахарозаменитель</label>
@@ -121,8 +123,10 @@
               </li>
             </ul>
           </fieldset>
-          <input class="button program-form__send-request" type="submit" value="Отправить заявку">
-          <div class="program-form__text">* — Обязательные поля</div>
+          <div class="program-form__send-request-wrapper">
+            <input class="button program-form__send-request" type="submit" value="Отправить заявку">
+            <div class="program-form__text">* — Обязательные поля</div>
+          </div>
         </form>
       </section>
       <section class="map">
@@ -135,11 +139,11 @@
             </span>
             <p class="map-legend__text">
               ул. Большая Конюшенная, д. 19/8
-              Санкт-Петербург
+              <span>Санкт-Петербург</span>
             </p>
           </div>
         </div>
-        <iframe height="360"></iframe>
+        <iframe></iframe>
       </section>
     </div>
   </main>
