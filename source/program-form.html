@@ -43,42 +43,46 @@
     <div class="container-fluid">
       <section class="program-form">
         <form class="program-form" action="https://echo.htmlacademy.ru">
+          <h1 class="program-form__header">Подбор программы</h1>
+          <div class="program-form__description">
+            Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </div>
+          <div class="program-form__wrapper">
+            <fieldset class="program-form__fieldset">
+              <div class="program-form__column program-form__column--characteristics">
+                <div class="program-form__row">
+                  <label class="program-form__label program-form__label--text" for="program-form-name">Имя:*</label>
+                  <input id="program-form-name" class="program-form__control program-form__control--text" value="Барсик" required>
+                </div>
+                <div class="program-form__row">
+                  <label class="program-form__label program-form__label--text" for="program-form-weight">Вес (кг):*</label>
+                  <input type="number" min="0" id="program-form-weight" class="program-form__control program-form__control--text" value="7" required>
+                </div>
+                <div class="program-form__row">
+                  <label class="program-form__label program-form__label--text" for="program-form-age">Возраст (лет):</label>
+                  <input type="number" min="0" id="program-form-age" class="program-form__control program-form__control--text" value="7">
+                </div>
+                </div>
+            </fieldset>
+            <fieldset class="program-form__fieldset program-form__fieldset--with-border">
+              <div class="program-form__column program-form__column--goal">
+                <div class="program-form__row">
+                  <input type="radio" id="program-form-weight-loss" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-loss" checked>
+                  <label class="program-form__label program-form__label--radio" for="program-form-weight-loss">Похудение</label>
+                </div>
+                <div class="program-form__row">
+                  <input type="radio" id="program-form-weight-gain" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-gain">
+                  <label class="program-form__label program-form__label--radio"  for="program-form-weight-gain">Набор массы</label>
+                </div>
+                <div class="program-form__row">
+                  <input type="radio" id="program-form-advice" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-advice">
+                  <label class="program-form__label program-form__label--radio" for="program-form-advice">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="program-form__fieldset">
-            <legend class="program-form__header">Подбор программы</legend>
-            <div class="program-form__description">
-              Заполните анкету и мы подберем
-              программу питания для вашего кота
-            </div>
-            <div class="program-form__row">
-              <label class="program-form__label program-form__label--text" for="program-form-name">Имя:*</label>
-              <input id="program-form-name" class="program-form__control program-form__control--text" value="Барсик" required>
-            </div>
-            <div class="program-form__row">
-              <label class="program-form__label program-form__label--text" for="program-form-weight">Вес (кг):*</label>
-              <input type="number" min="0" id="program-form-weight" class="program-form__control program-form__control--text" value="7" required>
-            </div>
-            <div class="program-form__row">
-              <label class="program-form__label program-form__label--text" for="program-form-age">Возраст (лет):</label>
-              <input type="number" min="0" id="program-form-age" class="program-form__control program-form__control--text" value="7">
-            </div>
-          </fieldset>
-          <fieldset class="program-form__fieldset">
-            <div class="program-form__column program-form__column--goal">
-              <div class="program-form__row">
-                <input type="radio" id="program-form-weight-loss" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-loss" checked>
-                <label class="program-form__label program-form__label--radio" for="program-form-weight-loss">Похудение</label>
-              </div>
-              <div class="program-form__row">
-                <input type="radio" id="program-form-weight-gain" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-gain">
-                <label class="program-form__label program-form__label--radio"  for="program-form-weight-gain">Набор массы</label>
-              </div>
-              <div class="program-form__row">
-                <input type="radio" id="program-form-advice" class="program-form__control program-form__control--radio" name="program-form-weight" value="program-form-advice">
-                <label class="program-form__label program-form__label--radio" for="program-form-advice">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="program-form__fieldset program-form__fieldset--without-border">
             <legend class="program-form__subheader">Контактные данные
               (владельца кота)</legend>
             <ul class="program-form__column program-form__column--contacts">
@@ -92,7 +96,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-form__fieldset program-form__fieldset--without-border">
+          <fieldset class="program-form__fieldset program-form__fieldset--comment">
             <legend class="program-form__subheader">Комментарий</legend>
             <ul class="program-form__column program-form__column--comment">
               <li class="program-form__row">
@@ -102,7 +106,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-form__fieldset program-form__fieldset--without-border">
+          <fieldset class="program-form__fieldset program-form__fieldset--misc">
             <legend class="program-form__subheader">Дополнительно</legend>
             <ul class="program-form__column program-form__column--misc">
               <li class="program-form__row">
