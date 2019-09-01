@@ -29,6 +29,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 28px;
+
     height: 135px;
   }
 }

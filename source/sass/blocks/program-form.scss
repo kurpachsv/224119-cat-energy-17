@@ -29,6 +29,10 @@
     font-size: 60px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+  }
 }
 
 .program-form__subheader {
@@ -46,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    padding-top: 15px;
+    padding-top: 37px;
     margin-left: -3px;
     padding-right: 43px;
 
@@ -61,6 +65,10 @@
 
     @media (min-width: $tablet-width) {
       @include pseudo;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
     }
 
     height: 4px;
@@ -89,7 +97,7 @@
     left: 100%;
 
     @media (min-width: $desktop-width) {
-      top: 40px;
+      top: 59px;
     }
 
     background-color: #68b738;
@@ -118,6 +126,11 @@
     font-size: 20px;
     line-height: 1.5;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-left: 0;
+  }
 }
 
 .program-form__fieldset {
@@ -133,11 +146,25 @@
     margin-top: 4px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 32px;
+    padding-right: 9px;
+  }
+
   &--with-border {
     padding: 15px 30px;
 
     @media (min-width: $tablet-width) {
       padding: 54px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin: 0;
+      margin-left: 70px;
+      margin-top: 42px;
+
+      border: none;
     }
 
     border-top: 1px solid #e6e6e6;
@@ -166,10 +193,18 @@
   &--misc {
     margin-top: -39px;
 
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+
     .program-form__subheader {
       &::after,
       &::before {
         top: 40px;
+
+        @media (min-width: $desktop-width) {
+          top: 56px;
+        }
       }
     }
 
@@ -228,10 +263,23 @@
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      padding-top: 40px;
+      padding-left: 3px;
+      padding-right: 22px;
 
       .program-form__row {
         width: 50%;
-        margin-right: 20px;
+        margin-right: 8px;
+        padding-right: 36px;
+
+        &:last-child {
+          margin-right: 0;
+          padding-left: 36px;
+          margin-top: 1px;
+        }
       }
     }
   }
@@ -245,9 +293,25 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    @media (min-width: $desktop-width) {
+      .program-form__row {
+        width: 25%;
+        max-width: 200%;
+
+        margin-left: 0;
+        margin-right: -30px;
+        margin-top: 1px;
+      }
+
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &--goal {
+    padding-bottom: 24px;
+
     .program-form__row {
       margin-top: 0;
       margin-bottom: 11px;
@@ -262,11 +326,15 @@
 
     @media (min-width: $desktop-width) {
       padding: 10px 30px;
+      padding-right: 0;
       margin: 10px 40px;
+      margin-left: 36px;
+      margin-right: 0;
 
       .program-form__row {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 11px;
+        margin-bottom: 0;
+        margin-left: -4px;
       }
     }
   }
@@ -307,7 +375,7 @@
 
     @media (min-width: $desktop-width) {
       top: 20px;
-      right: 10px;
+      right: 57px;
     }
 
     background-image: url("../img/icon-mail.svg");
@@ -330,6 +398,10 @@
       @media (min-width: $tablet-width) {
         top: 17px;
         right: 10px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 17px;
       }
 
       width: 21px;
@@ -387,6 +459,11 @@
     padding-left: 56px;
     padding-top: 11px;
     padding-bottom: 11px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 12px;
+      padding-bottom: 10px
+    }
 
     font-size: 16px;
     line-height: 1.13;
@@ -523,6 +600,7 @@
 
   &--textarea {
     padding: 12px;
+    height: 7em;
 
     font-size: 16px;
     line-height: 1.13;
@@ -533,6 +611,11 @@
 
       font-size: 20px;
       line-height: 1.5;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 5em;
+      min-height: 176px;
     }
 
     color: #444444;
@@ -555,11 +638,20 @@
     @media (min-width: $tablet-width) {
       padding-left: 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 18px;
+      margin-left: 5px;
+    }
   }
 
   &--text[type="tel"] {
     @media (min-width: $tablet-width) {
       padding-left: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 19px;
     }
   }
 }
@@ -576,6 +668,10 @@
 
     width: 50%;
     max-width: 283px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
   }
 }
 
@@ -599,6 +695,10 @@
     font-size: 16px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 81px;
+  }
 }
 
 .program-form__send-request-wrapper {
@@ -614,5 +714,10 @@
     margin-bottom: 60px;
     padding-left: 40px;
     padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+    padding-top: 30px;
   }
 }
