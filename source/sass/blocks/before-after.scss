@@ -1,11 +1,43 @@
+.before-after {
+  position: relative;
+  z-index: 1;
+}
+
+.before-after__wrapper {
+  position: relative;
+
+  top: 45px;
+  left: 7px;
+
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 560px;
+  }
+}
+
 .before-after__image {
-  display: block;
-
-  margin-left: -20px;
-  margin-top: 35px;
-
+  position: absolute;
   width: 320px;
-  height: 240px;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 692px;
+  }
+
+  &--before {
+    clip: rect(auto, 340px, auto, auto);
+  }
+
+  &--after {
+    clip: rect(auto, auto, auto, 340px);
+  }
 }
 
 .before-after__range {
@@ -15,9 +47,16 @@
 
   max-width: 205px;
 
-  margin-top: 31px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin-top: 63px;
+    margin-left: 63px;
+    margin-right: 70px;
+  }
 }
 
 
@@ -36,6 +75,11 @@
 
   background-color: transparent;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .before-after__progress {
@@ -49,6 +93,15 @@
   border-radius: 6px;
   border: solid 1px #cdcdcd;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    margin: 0 25px;
+
+    width: 100%;
+
+    background: #d9d9d9;
+  }
 
   &::after {
     @include pseudo;
