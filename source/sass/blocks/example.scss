@@ -1,0 +1,55 @@
+.example {
+  min-height: 688px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__title {
+  margin: 0;
+  margin-top: 39px;
+  padding: 0;
+  padding-top: 17px;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.67;
+
+  color: #111111;
+}
+
+.example__description {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+
+  font-family: $sec-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+
+  color: #444444;
+
+  max-width: 266px;
+}
+
+.example__cost {
+  margin: 0;
+  margin-top: 33px;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #111111;
+
+  text-transform: uppercase;
+  text-align: center;
+}
