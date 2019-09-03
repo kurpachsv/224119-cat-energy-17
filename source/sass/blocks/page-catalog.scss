@@ -12,8 +12,12 @@
 
 .page-catalog__products {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-catalog__more-products {
-  padding: 20px;
+padding: 20px;
 }

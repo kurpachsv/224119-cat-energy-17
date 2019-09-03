@@ -338,7 +338,7 @@
               Заказать
             </a>
           </li>
-          <li class="products__item">
+          <li class="products__item products__item--last-row">
             <div class="products__content">
               <a class="products__image-link" href="product.html">
                 <picture>
@@ -387,7 +387,7 @@
               Заказать
             </a>
           </li>
-          <li class="products__item products__item--last">
+          <li class="products__item products__item--last products__item--last-row">
             <div class="products__item__more-products more-products">
               <span class="more-products__text">Показать еще 100500 товаров</span>
               <p class="more-products__slogan">На самом деле вкусов гораздо больше!</p>
@@ -397,6 +397,72 @@
             </div>
           </li>
         </ul>
+      </section>
+      <section class="additional-products">
+        <div class="additional-products__wrapper">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <div class="additional-products__item-wrapper">
+              <h3 class="additional-products__name">Сахарозаменитель</h3>
+              <div class="additional-products__price-wrapper">
+                <span class="additional-products__items-count">1 упаковка (100 г)</span>
+                <span class="additional-products__price">200 р.</span>
+              </div>
+            </div>
+            <button class="button additional-products__order-button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__item-wrapper">
+              <h3 class="additional-products__name">Питьевая вода</h3>
+              <div class="additional-products__price-wrapper">
+                <span class="additional-products__items-count">5 литров</span>
+                <span class="additional-products__price">50 р.</span>
+              </div>
+            </div>
+            <button class="button additional-products__order-button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__item-wrapper">
+              <h3 class="additional-products__name">Молоко</h3>
+              <div class="additional-products__price-wrapper">
+                <span class="additional-products__items-count">1 литр</span>
+                <span class="additional-products__price">100 р.</span>
+              </div>
+            </div>
+            <button class="button additional-products__order-button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <div class="additional-products__item-wrapper">
+              <h3 class="additional-products__name">Витамины</h3>
+              <div class="additional-products__price-wrapper">
+                <span class="additional-products__items-count">1 упаковка (30 г)</span>
+                <span class="additional-products__price">300 р.</span>
+              </div>
+            </div>
+            <button class="button additional-products__order-button">Заказать</button>
+          </li>
+        </ul>
+        </div>
+        <div class="additional-products__promo promo">
+          <svg class="promo__icon" width="56" height="61">
+            <use xlink:href="#icon-gift"></use>
+          </svg>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.webp 1x, img/gift-photo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.webp 1x, img/gift-photo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gift-photo-mobile@1x.webp 1x, img/gift-photo-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x" width="280" height="289" alt="До и после Кэт энерджи">
+          </picture>
+          <p class="promo__text">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+          </p>
+        </div>
       </section>
     </div>
     <section class="map">
