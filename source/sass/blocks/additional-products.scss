@@ -73,7 +73,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 
     margin: 0;
     padding: 0;
@@ -113,6 +113,10 @@
 
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-products__price-wrapper {
@@ -135,7 +139,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 8px;
+    align-items: flex-end;
+
+    margin-top: 0;
+    padding-top: 0;
     padding-right: 38px;
 
     font-size: 16px;
