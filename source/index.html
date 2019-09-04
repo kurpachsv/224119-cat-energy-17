@@ -156,29 +156,13 @@
         <div class="example__column example__column--60">
           <div class="before-after">
             <div class="before-after__wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="before-after__image before-after__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До и после Кэт энерджи">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="before-after__image before-after__image--after" src="img/after-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До и после Кэт энерджи">
-              </picture>
+              <div class="before-after__image-wrapper before-after__image-wrapper--before"></div>
+              <div class="before-after__image-wrapper before-after__image-wrapper--after"></div>
             </div>
             <div class="before-after__range">
               <button class="before-after__button">Было</button>
-              <div class="before-after__progress">
-                <div class="before-after__progress-control"></div>
+              <div class="before-after__scroller-wrapper">
+                <div class="before-after__scroller"></div>
               </div>
               <button class="before-after__button">Стало</button>
             </div>
