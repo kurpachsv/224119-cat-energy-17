@@ -6,14 +6,23 @@
 
   &--closed .page-menu {
     display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 
   &--opened .page-menu {
-    display: block;
+    display: flex;
   }
 
   &--nojs .page-menu {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-right: 0;
   }
 }
 

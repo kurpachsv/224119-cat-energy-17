@@ -49,20 +49,20 @@
 }
 
 .page-header__wrapper {
-  position: relative;
-
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
-
-  padding-top: 12px;
-  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+
     padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+
     padding-top: 49px;
   }
 }
