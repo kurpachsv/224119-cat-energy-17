@@ -7,7 +7,7 @@
   &--closed .page-menu {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: flex;
     }
   }
@@ -20,7 +20,7 @@
     display: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
     margin-right: 0;
   }

@@ -126,7 +126,7 @@
 
   color: #444444;
 
-  max-width: 266px;
+  min--width: 266px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;

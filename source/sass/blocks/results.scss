@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-between;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 26px;
 
   list-style: none;
+
+  max-width: 300px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -25,6 +27,7 @@
 
 .results__item {
   min-width: 124px;
+  margin-right: 40px;
 
   text-align: center;
   border: 1px solid #d9d9d9;

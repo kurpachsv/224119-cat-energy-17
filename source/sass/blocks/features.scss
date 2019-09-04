@@ -186,7 +186,7 @@
   margin: 0;
   margin-bottom: 21px;
 
-  max-width: 230px;
+  min-width: 230px;
 
   font-family: $sec-font;
   font-size: 14px;
@@ -202,7 +202,7 @@
     padding-bottom: 41px;
     padding-right: 240px;
 
-    max-width: 100%;
+    min-width: 100%;
 
     font-size: 16px;
     line-height: 1.5;
