@@ -49,13 +49,16 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-
     padding-top: 19px;
   }
 
@@ -65,6 +68,8 @@
 }
 
 .page-header__logo {
+  max-width: 190px;
+
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }

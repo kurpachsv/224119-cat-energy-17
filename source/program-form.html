@@ -22,8 +22,10 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <nav class="site-nav">
-          <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <nav class="site-nav site-nav--closed site-nav--nojs">
+          <button class="site-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="site-nav__page-menu page-menu">
             <li class="page-menu__item">
               <a class="page-menu__link" href="index.html">Главная</a>
@@ -204,5 +206,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
