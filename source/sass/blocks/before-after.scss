@@ -2,6 +2,10 @@
   position: relative;
 
   z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
 }
 
 .before-after__wrapper {
@@ -12,6 +16,8 @@
 
   margin: 0 -20px;
 
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     top: 45px;
     left: 7px;
@@ -20,6 +26,11 @@
 
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -76px;
+    left: 62px;
   }
 }
 
@@ -46,6 +57,10 @@
       top: inherit;
       clip: rect(auto, 340px, auto, auto);
     }
+
+    @media (min-width: $desktop-width) {
+      clip: rect(auto, 367px, auto, auto);
+    }
   }
 
   &--after {
@@ -54,6 +69,10 @@
     @media (min-width: $tablet-width) {
       display: block;
       clip: rect(auto, auto, auto, 340px);
+    }
+
+    @media (min-width: $desktop-width) {
+      clip: rect(auto, auto, auto, 367px);
     }
   }
 }
@@ -74,6 +93,12 @@
     margin-top: 64px;
     margin-left: 63px;
     margin-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -42px;
+    margin-left: 156px;
+    margin-right: 0;
   }
 }
 

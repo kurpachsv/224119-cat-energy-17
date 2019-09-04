@@ -31,10 +31,26 @@
 
       z-index: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: 5px;
+
+      height: 77%;
+      width: 100%;
+
+      background: linear-gradient(to right, #f2f2f2 58%, #eaeaea 42%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    background: none;
+
+    min-height: auto;
   }
 }
 
-.example__wrapper {
+.example__row {
   padding-left: 20px;
   padding-right: 20px;
 
@@ -43,6 +59,34 @@
     padding-right: 30px;
 
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.example__column {
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--40 {
+    @media (min-width: $desktop-width) {
+      width: 40%;
+    }
+  }
+
+  &--60 {
+    @media (min-width: $desktop-width) {
+      width: 60%;
+    }
   }
 }
 
@@ -63,6 +107,10 @@
 
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -87,6 +135,11 @@
 
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 458px;
+    margin-top: 145px;
   }
 }
 
@@ -115,9 +168,16 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
+  }
 }
 
-.example__result-wrapper {
+.example__wrapper {
   display: flex;
   flex-direction: column;
 
@@ -125,6 +185,13 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 41px;
+    max-width: 368px;
   }
 }
 
@@ -136,5 +203,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 20px;
   }
 }
