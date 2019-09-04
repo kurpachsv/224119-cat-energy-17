@@ -1,12 +1,6 @@
 .page-catalog {
-  min-height: 3163px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 4022px;
-  }
-
   @media (min-width: $desktop-width) {
-    min-height: 2168px;
+    margin-bottom: 114px;
   }
 }
 
@@ -19,5 +13,5 @@
 }
 
 .page-catalog__more-products {
-padding: 20px;
+  padding: 20px;
 }
