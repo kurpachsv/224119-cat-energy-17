@@ -1,40 +1,42 @@
 .map {
   position: relative;
 
-  margin: 0 -11px;
-  margin-bottom: -35px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 0;
-
   @media (min-width: $tablet-width) {
-    margin: -9px;
-    margin-top: 75px;
-    padding: 9px;
-    padding-top: 0;
+    margin-top: -10px;
   }
 
   background-color: #f2f2f2;
+}
 
-  iframe {
-    height: 347px;
-    width: 100%;
+.map__image {
+  position: relative;
 
-    border: none;
+  height: 400px;
+  width: 100%;
 
-    @media (min-width: $tablet-width) {
-      height: 400px;
-    }
+  margin-top: -40px;
+
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin-top: -32px;
+
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: -14px;
+
+    z-index: 0;
   }
 }
 
 .map-legend {
-  margin: 36px -10px;
-  padding-top: 8px;
+  position: relative;
+
+  padding-top: 14px;
+
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -51,15 +53,16 @@
     position: absolute;
 
     left: 40px;
-    top: 96px;
+    top: 80px;
 
     max-width: 570px;
     width: 100%;
 
-    padding: 44px 57px;
+    padding: 33px 57px;
     margin: 0;
 
     background-color: #ffffff;
+    z-index: 1;
   }
 }
 
@@ -68,11 +71,12 @@
   justify-content: space-between;
 
   padding: 19px 20px;
-  height: 100px;
+  padding-top: 14px;
+  min-height: 100px;
 
   @media (min-width: $tablet-width) {
     padding: 20px;
-    padding-top: 35px;
+    padding-top: 33px;
   }
 }
 

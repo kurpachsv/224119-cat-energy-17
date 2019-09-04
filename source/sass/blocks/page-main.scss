@@ -1,15 +1,9 @@
 .page-main {
-  min-height: 2640px;
-
   @media (min-width: $tablet-width) {
-    min-height: 4038px;
-
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 2460px;
-
     margin-top: 71px;
   }
 }
