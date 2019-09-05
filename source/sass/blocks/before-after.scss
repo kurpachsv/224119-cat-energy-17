@@ -19,25 +19,27 @@
   justify-content: center;
 
   top: 35px;
-  left: 0;
+  left: -17px;
 
   margin: auto;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    top: 45px;
-    left: 7px;
+    top: 87px;
+    left: 0;
 
-    width: 636px;
-    height: 560px;
+    width: 602px;
+    height: 517px;
 
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    top: -76px;
-    left: 62px;
+    width: 636px;
+
+    top: -36px;
+    left: 69px;
   }
 }
 
@@ -67,7 +69,7 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      background-position-x: -50px;
+      background-position: left -34px top;
       background-image: url("../img/before-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -94,8 +96,7 @@
 
     @media (min-width: $tablet-width) {
       display: block;
-      background-position-x: -65px;
-      transform: scaleX(-1);
+      background-position: right -21px top;
 
       background-image: url("../img/after-tablet@1x.png");
 
@@ -112,8 +113,27 @@
       }
     }
   }
-}
 
+  @media (min-width: $tablet-width) {
+    &--before {
+      width: 50%;
+    }
+
+    &--after {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--before {
+      width: 52%;
+    }
+
+    &--after {
+      width: 48%;
+    }
+  }
+}
 
 .before-after__image {
   height: 100%;
@@ -131,19 +151,19 @@
 
   max-width: 205px;
 
-  margin-top: 60px;
+  margin-top: 74px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    margin-top: 64px;
+    margin-top: 107px;
     margin-left: 63px;
     margin-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -42px;
+    margin-top: 3px;
     margin-left: 156px;
     margin-right: 0;
   }
@@ -178,6 +198,8 @@
 .before-after__scroller-wrapper {
   position: relative;
 
+  left: -10px;
+
   width: 84px;
   height: 14px;
 
@@ -210,7 +232,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: -19px;
+    top: -14px;
     left: 50%;
 
     width: 34px;

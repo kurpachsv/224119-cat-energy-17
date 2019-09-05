@@ -202,8 +202,6 @@
     padding-bottom: 41px;
     padding-right: 240px;
 
-    min-width: 100%;
-
     font-size: 16px;
     line-height: 1.5;
 
@@ -340,5 +338,9 @@
   @media (min-width: $tablet-width) {
     top: 5px;
     left: 131px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
   }
 }
