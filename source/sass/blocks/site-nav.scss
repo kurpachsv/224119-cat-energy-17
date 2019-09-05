@@ -40,8 +40,8 @@
 
   background: none;
 
-  width: 19px;
-  height: 19px;
+  width: 24px;
+  height: 18px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -50,11 +50,11 @@
   &::after {
     @include pseudo;
 
-    top: 1px;
-    left: -8px;
+    top: 0;
+    left: 0;
 
-    width: 23px;
-    height: 23px;
+    width: 24px;
+    height: 18px;
 
     background-image: url("./../img/icon-mobile-menu.svg");
     background-repeat: no-repeat;

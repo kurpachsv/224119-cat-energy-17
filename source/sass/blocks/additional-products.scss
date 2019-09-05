@@ -16,6 +16,10 @@
 }
 
 .additional-products__title {
+  position: relative;
+
+  max-width: 373px;
+
   margin: 0;
   padding: 0;
   padding-top: 16px;
@@ -36,6 +40,38 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     font-size: 36px;
+  }
+
+  &::before {
+    @include pseudo;
+    display: none;
+
+    height: 4px;
+    width: 100vw;
+    right: calc(100% + 15px);
+    top: 48px;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+
+    background-color: #68b738;
+  }
+
+  &::after {
+    @include pseudo;
+    display: none;
+
+    height: 4px;
+    width: 100vw;
+    top: 48px;
+    left: 100%;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+
+    background-color: #68b738;
   }
 }
 
