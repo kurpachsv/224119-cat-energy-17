@@ -40,12 +40,21 @@
       background-image: none;
     }
   }
+
+  &--without-bg {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  padding-top: 13px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -54,11 +63,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+
     padding-top: 49px;
   }
 }
 
 .page-header__logo {
+  max-width: 190px;
+
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }

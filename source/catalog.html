@@ -22,8 +22,10 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <nav class="site-nav">
-          <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <nav class="site-nav site-nav--closed site-nav--nojs">
+          <button class="site-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="site-nav__page-menu page-menu">
             <li class="page-menu__item">
               <a class="page-menu__link" href="index.html">Главная</a>
@@ -39,7 +41,7 @@
       </div>
     </div>
   </header>
-  <main class="page-catalog">
+  <main class="page-catalog without-overflow">
     <div class="container-fluid">
       <section class="page-catalog__products products">
         <h2 class="products__title">Каталог продукции</h2>
@@ -338,7 +340,7 @@
               Заказать
             </a>
           </li>
-          <li class="products__item">
+          <li class="products__item products__item--last-row">
             <div class="products__content">
               <a class="products__image-link" href="product.html">
                 <picture>
@@ -387,7 +389,7 @@
               Заказать
             </a>
           </li>
-          <li class="products__item products__item--last">
+          <li class="products__item products__item--last products__item--last-row">
             <div class="products__item__more-products more-products">
               <span class="more-products__text">Показать еще 100500 товаров</span>
               <p class="more-products__slogan">На самом деле вкусов гораздо больше!</p>
@@ -398,9 +400,98 @@
           </li>
         </ul>
       </section>
+      <section class="additional-products">
+        <section class="additional-products__wrapper">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <ul class="additional-products__list">
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
+                <h3 class="additional-products__name">Сахарозаменитель</h3>
+                <div class="additional-products__price-wrapper">
+                  <span class="additional-products__items-count">1 упаковка (100 г)</span>
+                  <span class="additional-products__price">200 р.</span>
+                </div>
+              </div>
+              <button class="button additional-products__order-button">Заказать</button>
+            </li>
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
+                <h3 class="additional-products__name">Питьевая вода</h3>
+                <div class="additional-products__price-wrapper">
+                  <span class="additional-products__items-count">5 литров</span>
+                  <span class="additional-products__price">50 р.</span>
+                </div>
+              </div>
+              <button class="button additional-products__order-button">Заказать</button>
+            </li>
+            <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
+                <h3 class="additional-products__name">Молоко</h3>
+                <div class="additional-products__price-wrapper">
+                  <span class="additional-products__items-count">1 литр</span>
+                  <span class="additional-products__price">100 р.</span>
+                </div>
+              </div>
+              <button class="button additional-products__order-button">Заказать</button>
+            </li>
+          <li class="additional-products__item">
+              <div class="additional-products__item-wrapper">
+                <h3 class="additional-products__name">Витамины</h3>
+                <div class="additional-products__price-wrapper">
+                  <span class="additional-products__items-count">1 упаковка (30 г)</span>
+                  <span class="additional-products__price">300 р.</span>
+                </div>
+              </div>
+              <button class="button additional-products__order-button">Заказать</button>
+            </li>
+          </ul>
+        </section>
+        <div class="additional-products__promo promo">
+          <svg class="promo__icon" width="56" height="61">
+            <use xlink:href="#icon-gift"></use>
+          </svg>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.webp 1x, img/gift-photo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.webp 1x, img/gift-photo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gift-photo-mobile@1x.webp 1x, img/gift-photo-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x" width="280" height="289" alt="До и после Кэт энерджи">
+          </picture>
+          <p class="promo__text">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+          </p>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">Карта офиса</h2>
+      <div class="map-legend">
+        <div class="map-legend__info">
+          <span class="map-legend__header">
+            Приглашаем<br>
+            к сотрудничеству дилеров!
+          </span>
+          <p class="map-legend__text">
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта офиса">
+      </picture>    </section>
     <div class="container-fluid">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
@@ -445,5 +536,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

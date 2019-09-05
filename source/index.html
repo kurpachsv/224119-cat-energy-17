@@ -22,8 +22,10 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <nav class="site-nav">
-          <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <nav class="site-nav site-nav--closed site-nav--nojs">
+          <button class="site-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="site-nav__page-menu page-menu">
             <li class="page-menu__item">
               <a class="page-menu__link page-menu__link--bg-active">Главная</a>
@@ -118,8 +120,83 @@
           </ul>
       </section>
     </div>
+    <section class="page-main__example example">
+      <div class="container-fluid">
+        <div class="example__row">
+          <div class="example__column example__column--ds40">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто
+              заменив свой обычный корм на Cat
+              Energy Slim. Отличный результат без
+              изнуряющих тренировок! При этом он не
+              менял своих привычек и по-прежнему
+              спит по 16 часов в день.
+            </p>
+            <div class="example__wrapper">
+              <ul class="example__results results">
+                <li class="results__item">
+                  <div class="results__wrapper">
+                    <b class="results__value">5 кг</b>
+                    <p class="results__type">снижение веса</p>
+                  </div>
+                </li>
+                <li class="results__item">
+                  <div class="results__wrapper">
+                    <b class="results__value">60 дней</b>
+                    <p class="results__type">затрачено времени</p>
+                  </div>
+                </li>
+              </ul>
+              <p class="example__cost">
+                Затраты на питание: <span class="example__cost-value">15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+          <div class="example__column example__column--ds60">
+            <div class="before-after">
+              <div class="before-after__wrapper">
+                <div class="before-after__image-wrapper before-after__image-wrapper--before"></div>
+                <div class="before-after__image-wrapper before-after__image-wrapper--after"></div>
+              </div>
+              <div class="before-after__range">
+                <button class="before-after__button">Было</button>
+                <div class="before-after__scroller-wrapper">
+                  <div class="before-after__scroller"></div>
+                </div>
+                <button class="before-after__button">Стало</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">Карта офиса</h2>
+      <div class="map-legend">
+        <div class="map-legend__info">
+          <span class="map-legend__header">
+            Приглашаем<br>
+            к сотрудничеству дилеров!
+          </span>
+          <p class="map-legend__text">
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта офиса">
+      </picture>
+    </section>
     <div class="container-fluid">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
@@ -164,5 +241,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

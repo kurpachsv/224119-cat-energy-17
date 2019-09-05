@@ -1,0 +1,138 @@
+.map {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -8px;
+  }
+
+  background-color: #f2f2f2;
+}
+
+.map__image {
+  position: relative;
+
+  height: 400px;
+  width: 100%;
+
+  margin-top: -40px;
+
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin-top: -32px;
+
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -14px;
+
+    z-index: 0;
+  }
+}
+
+.map-legend {
+  position: relative;
+
+  padding-top: 14px;
+
+  background-color: #ffffff;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 70px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    left: 40px;
+    top: 76px;
+
+    max-width: 570px;
+    width: 100%;
+
+    padding: 33px 57px;
+    margin: 0;
+
+    background-color: #ffffff;
+    z-index: 1;
+  }
+}
+
+.map-legend__info {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 19px 20px;
+  padding-top: 14px;
+  min-height: 100px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+    padding-top: 33px;
+  }
+}
+
+.map-legend__header {
+  margin: 0;
+  padding: 0;
+
+  width: 50%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+
+    font-size: 20px;
+    line-height: 1.25;
+  }
+}
+
+.map-legend__text {
+  margin: 0;
+  padding: 0;
+
+  width: 50%;
+
+  font-family: $sec-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 170px;
+    min-height: 80px;
+    margin-top: -1px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
