@@ -34,10 +34,10 @@
     @media (min-width: $desktop-width) {
       bottom: 0;
 
-      height: 75%;
+      height: 76.3%;
       width: 100%;
 
-      background: linear-gradient(to right, #f2f2f2 58%, #eaeaea 42%);
+      background: linear-gradient(to right, #f2f2f2 75.1%, #eaeaea 24.9%)
     }
   }
 
@@ -81,6 +81,7 @@
   &--ds40 {
     @media (min-width: $desktop-width) {
       width: 40%;
+      padding-left: 30px;
     }
   }
 

@@ -5,6 +5,10 @@
     margin-top: -8px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+  }
+
   background-color: #f2f2f2;
 }
 
@@ -20,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    margin-top: -32px;
+    margin-top: -38px;
 
     z-index: 2;
   }
@@ -35,34 +39,33 @@
 .map-legend {
   position: relative;
 
-  padding-top: 14px;
+  padding-top: 33px;
 
   background-color: #ffffff;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding-top: 31px;
+    padding-top: 39px;
     padding-left: 52px;
     padding-right: 52px;
     padding-bottom: 70px;
 
     margin-left: 0;
     margin-right: 0;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
 
     left: 40px;
-    top: 76px;
+    top: 79px;
 
     max-width: 570px;
     width: 100%;
 
     padding: 33px 57px;
     margin: 0;
-
-    background-color: #ffffff;
     z-index: 1;
   }
 }

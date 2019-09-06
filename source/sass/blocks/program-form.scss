@@ -24,14 +24,14 @@
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    margin-top: 47px;
+    margin-top: 38px;
 
     font-size: 60px;
     line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 64px;
+    margin-top: 55px;
   }
 }
 
@@ -72,10 +72,6 @@
       @include pseudo;
     }
 
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-
     height: 4px;
     width: 40px;
 
@@ -86,8 +82,7 @@
       width: 100vw;
 
       left: inherit;
-      right: 100%;
-      top: 40px;
+      top: 55px;
     }
 
     background-color: #68b738;
@@ -102,7 +97,7 @@
     left: 100%;
 
     @media (min-width: $desktop-width) {
-      top: 59px;
+      top: 56px;
     }
 
     background-color: #68b738;
@@ -209,7 +204,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 0;
+      margin-top: 4px;
     }
 
     .program-form__subheader {
@@ -273,6 +268,7 @@
 
     @media (min-width: $tablet-width) {
       padding: 45px 1px;
+      padding-top: 44px;
       padding-right: 43px;
     }
 
@@ -281,7 +277,7 @@
       justify-content: space-between;
       align-items: flex-start;
 
-      padding-top: 40px;
+      padding-top: 37px;
       padding-left: 3px;
       padding-right: 22px;
 
@@ -291,9 +287,10 @@
         padding-right: 36px;
 
         &:last-child {
+          margin-top: 1px;
           margin-right: 0;
           padding-left: 36px;
-          margin-top: 1px;
+          padding-right: 0;
         }
       }
     }
