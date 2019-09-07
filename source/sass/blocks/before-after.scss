@@ -210,9 +210,6 @@
 .before-after__scroller-wrapper {
   position: relative;
 
-  top: -3px;
-  left: -10px;
-
   width: 84px;
   height: 14px;
 
@@ -237,19 +234,17 @@
 }
 
 .before-after__scroller {
-  position: absolute;
-  top: 3px;
-
   width: 50%;
   height: 6px;
 
   border-radius: 10px;
   background-color: #68b738;
 
-  transform: translateX(-5px);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+
     top: -14px;
     left: 50%;
 
@@ -260,10 +255,14 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
+
+    transform: translateX(-17px);
   }
 
   @media (min-width: $desktop-width) {
     left: 48%;
+
+    transform: translateX(-5px);
   }
 
   &::after {
