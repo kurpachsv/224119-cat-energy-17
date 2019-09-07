@@ -15,7 +15,7 @@
   <header class="page-header page-header--without-bg">
     <div class="container-fluid">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -90,11 +90,11 @@
             <ul class="program-form__column program-form__column--contacts">
               <li class="program-form__row program-form__row--email-row">
                 <label class="program-form__label program-form__label--text" for="program-form-email">E-mail:*</label>
-                <input class="program-form__control program-form__control--text" type="email" id="program-form-email" name="program-form-email" value="kuklachev@gmail.com">
+                <input class="program-form__control program-form__control--text" type="email" id="program-form-email" name="program-form-email" value="kuklachev@gmail.com" required>
               </li>
               <li class="program-form__row program-form__row--phone-row">
                 <label class="program-form__label program-form__label--text" for="program-form-phone">Телефон:*</label>
-                <input class="program-form__control program-form__control--text" type="tel" id="program-form-phone" name="program-form-phone" value="8 (960) 900-60-90">
+                <input class="program-form__control program-form__control--text" type="tel" id="program-form-phone" name="program-form-phone" value="8 (960) 900-60-90" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
               </li>
             </ul>
           </fieldset>
