@@ -18,6 +18,7 @@
 
       @media (min-width: $desktop-width) {
         padding-top: 31px;
+        top: 80px;
       }
     }
 
@@ -27,6 +28,15 @@
 
     @media (min-width: $desktop-width) {
       margin-top: -8px;
+    }
+
+    .map-legend__info {
+      background-color: #ffffff;
+      padding-top: 15px;
+
+      @media (min-width: $tablet-width) {
+        padding-top: 32px;
+      }
     }
   }
 
@@ -69,13 +79,15 @@
   height: 400px;
   width: 100%;
 
-  margin-top: -40px;
+  margin-top: -32px;
+  margin-bottom: -11px;
 
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     height: 400px;
     margin-top: -38px;
+    margin-bottom: 0;
 
     z-index: 2;
   }
@@ -90,13 +102,14 @@
 .map-legend {
   position: relative;
 
-  padding-top: 32px;
+  padding-top: 36px;
 
   background-color: #ffffff;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
+    padding-top: 49px;
 
     margin-left: 0;
     margin-right: 0;
@@ -109,7 +122,7 @@
     position: absolute;
 
     left: 40px;
-    top: 79px;
+    top: 80px;
 
     max-width: 570px;
     width: 100%;
@@ -127,19 +140,26 @@
   justify-content: space-between;
 
   padding: 19px 20px;
-  padding-top: 14px;
+  padding-top: 28px;
   min-height: 100px;
+
+  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
-    padding-top: 33px;
+    padding-top: 16px;
     padding-left: 70px;
     padding-right: 70px;
+
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 29px;
+
+    background-color: transparent;
   }
 }
 
