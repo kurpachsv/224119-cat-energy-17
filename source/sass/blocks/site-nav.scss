@@ -17,6 +17,10 @@
   }
 
   &--nojs .page-menu {
+    display: flex;
+  }
+
+  &--nojs .site-nav__toggle {
     display: none;
   }
 
