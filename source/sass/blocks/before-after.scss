@@ -160,7 +160,7 @@
     max-width: 100%;
     margin-top: 107px;
     margin-left: 63px;
-    margin-right: 70px;
+    margin-right: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -221,6 +221,9 @@
   width: 84px;
   height: 14px;
 
+  top: -4px;
+  left: -4px;
+
   padding: 3px 5px;
   border: 1px solid #cdcdcd;
   border-radius: 10px;
@@ -264,7 +267,7 @@
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
 
-    transform: translateX(-17px);
+    transform: translateX(-11px);
 
     &:hover {
       border: 1px solid #bababa;
