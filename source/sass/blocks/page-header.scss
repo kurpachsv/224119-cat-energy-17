@@ -76,6 +76,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {

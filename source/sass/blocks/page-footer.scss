@@ -12,10 +12,20 @@
   @media (min-width: $tablet-width) {
     height: 96px;
   }
+
+  cursor: pointer;
 }
 
 .page-footer__logo-image {
   width: 128px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__wrapper {

@@ -388,57 +388,30 @@
     margin-bottom: 20px;
   }
 
-  &--email-row::after {
-    @include pseudo;
-
-    top: 13px;
-    right: 15px;
-
-    width: 18px;
-    height: 14px;
-
-    @media (min-width: $tablet-width) {
-      top: 19px;
-      right: 14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 20px;
-      right: 57px;
-    }
-
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   &--phone-row {
+    input:active,
+    input:focus + .program-form__icon-phone {
+      fill: #68b738;
+    }
+
+    input:invalid + .program-form__icon-phone {
+      fill: #ff8282;
+    }
+
     @media (min-width: $tablet-width) {
       padding-top: 1px;
       padding-bottom: 7px;
     }
+  }
 
-    &::after {
-      @include pseudo;
+  &--email-row {
+    input:active,
+    input:focus + .program-form__icon-email {
+      fill: #68b738;
+    }
 
-      top: 10px;
-      right: 11px;
-
-      @media (min-width: $tablet-width) {
-        top: 17px;
-        right: 10px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 17px;
-      }
-
-      width: 21px;
-      height: 21px;
-
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
+    input:invalid + .program-form__icon-email {
+      fill: #ff8282;
     }
   }
 }
@@ -540,6 +513,20 @@
   &--radio {
     display: none;
 
+    &:hover {
+      & + label::after {
+        border: 1px solid #bababa;
+      }
+    }
+
+    &:active {
+      & + label::after {
+        border: 1px solid #bababa;
+      }
+
+      opacity: 0.3;
+    }
+
     & + label::after {
       @include pseudo;
 
@@ -590,6 +577,20 @@
 
   &--checkbox {
     display: none;
+
+    &:hover {
+      & + label::before {
+        border: 1px solid #bababa;
+      }
+    }
+
+    &:active {
+      & + label::before {
+        border: 1px solid #bababa;
+      }
+
+      opacity: 0.3;
+    }
 
     & + label::before {
       @include pseudo;
@@ -663,6 +664,10 @@
 
   &--text,
   &--textarea {
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
     &:active,
     &:focus {
       outline: 2px solid #444444;
@@ -759,4 +764,43 @@
     padding-left: 2px;
     padding-top: 33px;
   }
+}
+
+.program-form__icon-email {
+  position: absolute;
+
+  top: 13px;
+  right: 15px;
+
+  width: 18px;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 19px;
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    right: 57px;
+  }
+}
+
+.program-form__icon-phone {
+  position: absolute;
+
+  top: 10px;
+  right: 11px;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
+
+  width: 21px;
+  height: 21px;
 }

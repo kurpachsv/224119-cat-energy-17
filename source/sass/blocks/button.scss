@@ -22,7 +22,7 @@
 
   cursor: pointer;
 
-  &--down {
+  &:active {
     color: rgba($color-btn, 0.3);
   }
 
@@ -45,5 +45,9 @@
     @media (min-width: $desktop-width) {
       min-width: 170px;
     }
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
   }
 }
