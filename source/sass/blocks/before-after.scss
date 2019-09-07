@@ -38,8 +38,8 @@
   @media (min-width: $desktop-width) {
     width: 636px;
 
-    top: -36px;
-    left: 69px;
+    top: -37px;
+    left: 75px;
   }
 }
 
@@ -164,8 +164,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 3px;
-    margin-left: 156px;
+    margin-top: 2px;
+    margin-left: 163px;
     margin-right: 0;
   }
 }
@@ -175,6 +175,7 @@
   margin: 0;
   margin-left: 5px;
   padding: 0;
+  padding-bottom: 7px;
 
   border: none;
 
@@ -185,6 +186,7 @@
   text-transform: uppercase;
 
   background-color: transparent;
+  border-bottom: 1px dotted #bebebe;
   color: #111111;
 
   user-select: none;
@@ -194,11 +196,21 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  &--before {
+    margin-right: 20px;
+  }
+
+  &--after {
+    margin-left: 22px;
+    margin-right: -8px;
+  }
 }
 
 .before-after__scroller-wrapper {
   position: relative;
 
+  top: -3px;
   left: -10px;
 
   width: 84px;
@@ -210,12 +222,17 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    height: 6px;
-    margin: 0 25px;
+    height: 4px;
+    margin: 0;
 
     width: 100%;
 
     background: #d9d9d9;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    width: 427px;
   }
 }
 
@@ -227,9 +244,9 @@
   height: 6px;
 
   border-radius: 10px;
-
   background-color: #68b738;
 
+  transform: translateX(-5px);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -243,6 +260,10 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 48%;
   }
 
   &::after {
